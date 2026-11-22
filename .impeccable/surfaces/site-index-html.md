@@ -17,15 +17,17 @@ Kiki's Pet Shop marketing site: Home (landing), Shop, About, Contact. Visitor mo
 
 ## Direction contract
 
-THESIS: The site is the shopping complex's directory board, and Kiki's is the strip you came looking for. It refuses the category default: pastel pet template with rounded icon cards, paw confetti and a dog-photo hero.
+Redesign pinned by the user (2026-11-23): "modernize it, the blue is too contrasty, more modern, minimal, more pet shop vibe with the pics I give you". The four user photos (golden-hour cats: blinds nap, golden profile, persian glow, sun in grass) set the world. The user's pin beats the roll; the navy directory-board world is retired.
 
-OWN-WORLD: Brushed-aluminium light ground (#eceef2) carrying deep board navy (#182463) panels; enamel sign strips in navy, magenta (#d4196f) and paw yellow (#f6be1a). Anek Bangla throughout: expanded heavy for plates and strips, normal width for reading. Plate numerals (2F, 122, 01680-042538) set large. Every enclosure is a sign strip that does a job; no decorative boxes, no paw confetti. The "you are here" state is the strip itself filling yellow.
+THESIS: A calm, sunlit neighbourhood pet shop: the page feels like the warm light in the photos, and ordering is one honey-coloured button away. It refuses both the navy signboard it replaces and the pastel paw-confetti pet template.
 
-STORY: A visitor sees at once that this is a real shop on the 2nd floor of Khaja Supermarket, sees the actual shelves, browses categories as directory strips, and taps the yellow WhatsApp strip to ask for what they need.
+OWN-WORLD: Warm white paper ground (#fbf8f3) with sand sections (#f3ece2) and hairline dividers (#e6dccf); warm near-black ink (#2b2420) and muted cocoa text (#6b5f55); one honey accent from the photos' light (#f2b13d) for action and "you are here", deep amber (#a35d0c) for accent text on light. Cocoa footer only. Anek Bangla at normal width, 700 for headings, generous size, tight tracking. Photos carry the colour; the interface stays quiet. Rounded 14px photos, 10px controls, flat (no shadows except the mobile dock).
 
-FIRST VIEWPORT: Navy board header with logo, bilingual wordmark and nav plates (active plate yellow). Below, one full-width navy directory board: left two-thirds holds the "2F · Shop 122" plate, the headline, the Bangla tagline, five category strips stacked as wide rows, and the yellow WhatsApp action strip; right third holds the muted shop-tour reel mounted as a lit panel in the board. On mobile the plate, headline and WhatsApp strip come first, the reel after the strips.
+STORY: A visitor meets a sunlit cat and a plain promise (cat food, litter and treats in Kallyanpur), sees exactly where the shop is, taps the honey WhatsApp button, or scans the category list and real shelf photos first.
 
-FORM: Market Directory Board, position 5 of 7 on the ordered list. seed:926c5a2cae4e1bf9. Signature interaction: on page change the yellow "you are here" plate slides along the board to the new page's link (cross-document View Transitions) while content rises in; the floor line (Bus stand → Khaja Supermarket → 2nd floor → Shop 122) draws itself and lights its stops on scroll. Raises kept: View Transitions as navigation (Sliding Planes), strip-colour state (Living Skin), one horizon floor line (Indoor Sun), real numbers as interface (Nixie), no decorative enclosure (Cracktro).
+FIRST VIEWPORT: Light header with logo, bilingual wordmark, text nav (active link in a honey pill) and a dark WhatsApp button. Hero on paper: left column holds the 2F / 122 / Khaja chips, the H1, the Bangla tagline, the honey WhatsApp action with the number, the Messenger link, then the five category rows in a white panel; right column holds the blinds-nap photo, tall and rounded, with a "Watch the shop tour" chip. On mobile: chips, H1, Bangla, WhatsApp, rows, photo.
+
+FORM: User-pinned "golden hour shop" re-skin; no roll (pinned direction beats the roll). Previous seed reference seed:926c5a2cae4e1bf9 retired with the old world. Signature interaction kept: the honey "you are here" pill slides between nav links on page change (cross-document View Transitions) while content rises in; the floor line (Bus stand → Khaja Supermarket → 2nd floor → Shop 122) draws itself on scroll.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 

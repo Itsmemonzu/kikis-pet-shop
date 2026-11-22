@@ -7,10 +7,10 @@ The static prototype in `site/` is built so every section maps to an Elementor *
 | What | Where in WordPress | Value |
 |---|---|---|
 | Theme | Appearance › Themes | **Hello Elementor** (no theme styling to fight) |
-| Global Colors | Elementor › Site Settings › Global Colors | Primary `#172260` · Secondary `#c8156a` · Text `#12173a` · Accent `#f7bf18` · plus custom: Board strip `#202d74`, Board deep `#10184a`, Aluminium `#eceef2`, Muted text `#474d6c` |
-| Global Fonts | Site Settings › Global Fonts | All four = **Anek Bangla** (Primary 800, Secondary 700, Text 400, Accent 700) |
+| Global Colors | Elementor › Site Settings › Global Colors | Primary `#2b2420` (ink) · Secondary `#a35d0c` (amber text) · Text `#2b2420` · Accent `#f2b13d` (honey) · plus custom: Muted text `#6b5f55`, Honey lit `#f7c766`, Page `#ffffff`, Stone `#f5f0ea`, Hairline `#e6dccf`, Footer `#2b2420` |
+| Global Fonts | Site Settings › Global Fonts | All four = **Anek Bangla** (Primary 700, Secondary 600, Text 400, Accent 700) |
 | Body | Site Settings › Typography | 19px / line-height 1.6, colour Text |
-| Width axis loader | HTML widget in the header template (or a code-snippet plugin, `wp_head`) | `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,400..800&display=swap">`. Elementor's own font loader only loads weights, and the expanded sign lettering needs the `wdth` axis. |
+| Font loader | handled by Elementor | Elementor's Google Fonts loader is enough; the design uses the normal width only |
 | Global CSS | Appearance › Customize › Additional CSS | paste all of `site/css/kiki.css` and change the two `url("../assets/fb/logo-plate.jpg")` paths to the Media Library URL |
 | Global JS | Code-snippet plugin (footer) or an HTML widget in the footer template | `<script>` + contents of `site/js/kiki.js` |
 | `js` class early | same snippet plugin, `wp_head` | `<script>document.documentElement.classList.add("js")</script>` |
@@ -28,21 +28,21 @@ Set classes in **Advanced › CSS Classes**. Containers use Flexbox/Grid contain
 | `header.k-header` | Container (full width, boxed inner 1240) | `k-header` |
 | logo + wordmark | Image (logo-plate.jpg) + Heading `KIKI'S <span>PET SHOP</span>` + Text `কিকি'স পেট শপ` | `k-brand` on the inner container |
 | nav links | one **HTML widget** in the shared header template, containing the `<nav class="k-nav">` markup (4 links, none marked) followed by the inline marker script below | `k-nav` |
-| `section.k-board` hero | Container, background Primary | `k-board k-intro` (home) / `k-board k-pagehead` (inner pages) |
+| `section.k-board` hero | Container, background white, 2 columns | `k-board k-intro` (home) / `k-board k-pagehead` (inner pages) |
 | headline | Heading H1 | `k-h1 k-display` |
 | Bangla line | Text Editor | `k-bn k-bn-line` |
 | 2F / 122 plates | Icon List or HTML widget | `k-plates` / `k-plate` |
 | directory strips | **Icon List** (one item per category, link set, arrow icon) or HTML widget | `k-strips` (list) → items rendered as `k-strip` |
 | WhatsApp action strip | Button widget (or HTML) | `k-action` |
-| hero video | **Video** widget (self-hosted `tour-loop.mp4`, autoplay, mute, loop, play on mobile, poster image) | `k-lit` on its container |
+| hero photo | **Image** widget (`assets/cats/blinds-nap.webp`) + Button widget "Watch the shop tour" linking to About `#tour` | `k-hero-photo` on its container, button `k-tag` |
 | floor line | HTML widget (markup in `index.html`, `.k-floor`) | `k-floor` (`k-floor--light` on white) |
-| section wrappers | Container | `k-section`, `k-section--white`, `k-section--navy` |
+| section wrappers | Container | `k-section`, `k-section--white`, `k-section--sand` |
 | section heading row | Container (2 columns) | `k-head` |
 | H2 | Heading H2 | `k-h2 k-display` |
 | product shelf | Container grid 4 cols (2 on mobile), each item = Image + Text Editor (brand, line, link) | grid `k-shelf`; item `k-item k-rv`; image wrapper `k-item__img`; tag `k-item__tag` |
 | cat mosaic | Container grid, each = Image with caption | `k-mosaic` / `k-tile k-rv-img` |
 | order steps | Container with 3 children (Heading + Text) | `k-steps k-rv-slats` |
-| buttons | Button | `k-btn`, `k-btn--navy`, `k-btn--ghost`, `k-btn--white` |
+| buttons | Button | `k-btn` (honey), `k-btn--dark`, `k-btn--ghost`, `k-btn--white` (dark, header) |
 | address list | Icon List | `k-addr` |
 | map | **Google Maps** widget, address "Khaja Super Market, Kallyanpur, Dhaka", zoom 16 | `k-map` |
 | shop sidebar | Container (sticky via class) + Icon List of anchors | `k-dir__nav` inside `k-dir` |
@@ -67,7 +67,7 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 
 ## 4. Media to upload
 
-`site/assets/fb/` (shop's own photos, logo, reel), `site/assets/shop/` (stills from the shop reel), `site/assets/cats/` (Unsplash, credits in `CREDITS.md`), `site/assets/video/` (`tour-loop.mp4` silent hero loop, `tour-full.mp4` with sound, posters).
+`site/assets/fb/` (shop's own photos, logo, reel), `site/assets/shop/` (stills from the shop reel), `site/assets/cats/` (the four `.webp` golden-hour photos supplied by the client, plus Unsplash photos credited in `CREDITS.md`), `site/assets/video/` (`tour-full.mp4` with sound, posters).
 
 ## 5. Facts still to confirm with the owner
 

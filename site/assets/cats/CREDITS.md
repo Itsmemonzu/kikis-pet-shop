@@ -11,3 +11,6 @@
 - cat-window.jpg — images.unsplash.com/photo-1612245229854-e69ff79cd51a
 - kittens-three.jpg — images.unsplash.com/photo-1566847438217-76e82d383f84
 - cat-basket.jpg — images.unsplash.com/photo-1615497001839-b0a0eac3274c
+
+# Supplied by the client (2026-11-23)
+- blinds-nap.webp, golden-profile.webp, persian-glow.webp, sun-grass.webp: photos the client provided for the site. Confirm usage rights before launch if they were not taken by the shop.
