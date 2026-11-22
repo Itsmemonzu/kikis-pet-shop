@@ -48,7 +48,7 @@ Set classes in **Advanced › CSS Classes**. Containers use Flexbox/Grid contain
 | shop sidebar | Container (sticky via class) + Icon List of anchors | `k-dir__nav` inside `k-dir` |
 | shop category | Container with CSS ID `wet-food`, `dry-food`, `treats`, `litter`, `grooming` | `k-cat` |
 | two-photo row | Container 2 cols, 2 × Image | `k-media2` |
-| contact cards | 3 × Icon Box (link set) | `k-channels` / `k-channel` (+ `k-channel--primary`) |
+| contact | Container 2 columns: Icon Box (WhatsApp, link set) + Icon List (Messenger, Email, Facebook page, links set) | wrapper `k-reach`; WhatsApp `k-channel k-channel--primary`; list `k-strips` |
 | about tour video | Video widget (`tour-full.mp4`, controls on, sound available) | `k-lit k-tour` |
 | footer | Container | `k-footer` |
 | mobile order bar | HTML widget in footer template | `k-dock` |
