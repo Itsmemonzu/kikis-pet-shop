@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T23:59:00Z",
+  "title": "Design System: Kiki's Pet Shop",
+  "extensions": {
+    "colorMeta": {
+      "board-navy": {
+        "role": "primary",
+        "displayName": "Board Navy",
+        "canonical": "#172260",
+        "purpose": "The board: header, hero panels, navy sections, tags. Elementor Global Color Primary.",
+        "tonalRamp": [
+          "#181c35",
+          "#242d60",
+          "#2d3c90",
+          "#3147c4",
+          "#5d6ed0",
+          "#8e99d7",
+          "#bfc4e3",
+          "#eeeff6"
+        ]
+      },
+      "board-strip": {
+        "role": "primary",
+        "displayName": "Board Strip",
+        "canonical": "#202d74",
+        "purpose": "Face of directory strips, step cells, channel cards. Elementor custom.",
+        "tonalRamp": [
+          "#191d34",
+          "#272f5e",
+          "#303f8c",
+          "#364bbe",
+          "#6172cc",
+          "#919bd4",
+          "#c0c5e2",
+          "#eff0f6"
+        ]
+      },
+      "board-deep": {
+        "role": "primary",
+        "displayName": "Board Deep",
+        "canonical": "#10184a",
+        "purpose": "Rail/seams, lit mount, footer, text on yellow, navy hover fill. Elementor custom.",
+        "tonalRamp": [
+          "#171b35",
+          "#232c62",
+          "#2a3992",
+          "#2d43c8",
+          "#5a6ad3",
+          "#8c97d9",
+          "#bec3e4",
+          "#eeeff6"
+        ]
+      },
+      "shop-magenta": {
+        "role": "secondary",
+        "displayName": "Shop Magenta",
+        "canonical": "#c8156a",
+        "purpose": "Brand 'PET SHOP' colour; light grounds only (Bangla sub-lines, note icon). Elementor Global Color Secondary.",
+        "tonalRamp": [
+          "#391325",
+          "#6a1b40",
+          "#a01d5b",
+          "#db1976",
+          "#e34a93",
+          "#e382b0",
+          "#e9b9d0",
+          "#f7edf2"
+        ]
+      },
+      "pink-on-navy": {
+        "role": "secondary",
+        "displayName": "Pink on Navy",
+        "canonical": "#ff7ab4",
+        "purpose": "Magenta's stand-in on navy (header wordmark).",
+        "tonalRamp": [
+          "#3e0f23",
+          "#73123c",
+          "#af0d54",
+          "#f2036b",
+          "#f5388a",
+          "#ee77ab",
+          "#efb3cd",
+          "#f9ecf1"
+        ]
+      },
+      "here-yellow": {
+        "role": "tertiary",
+        "displayName": "Here Yellow",
+        "canonical": "#f7bf18",
+        "purpose": "The only state colour: you-are-here, filled strips, action strip, primary button, numerals, focus. Elementor Global Color Accent.",
+        "tonalRamp": [
+          "#3c3110",
+          "#705915",
+          "#aa8413",
+          "#eab20b",
+          "#eec23f",
+          "#eace7b",
+          "#eddfb5",
+          "#f8f5ec"
+        ]
+      },
+      "here-yellow-lit": {
+        "role": "tertiary",
+        "displayName": "Here Yellow Lit",
+        "canonical": "#ffd34d",
+        "purpose": "Hover fill on yellow surfaces; focus ring on navy.",
+        "tonalRamp": [
+          "#3e320f",
+          "#735b12",
+          "#af870d",
+          "#f2b703",
+          "#f5c638",
+          "#eed177",
+          "#efe0b3",
+          "#f9f6ec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#12173a",
+        "purpose": "Body text on light grounds. Elementor Global Color Text.",
+        "tonalRamp": [
+          "#1a1d33",
+          "#292f5c",
+          "#343e89",
+          "#3b4bb9",
+          "#6571c8",
+          "#939bd2",
+          "#c1c5e1",
+          "#eff0f6"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#474d6c",
+        "purpose": "Secondary text on aluminium/white (7:1). Elementor custom.",
+        "tonalRamp": [
+          "#21232b",
+          "#383b4c",
+          "#4e536f",
+          "#626a93",
+          "#8389aa",
+          "#a6aabf",
+          "#cbcdd7",
+          "#f1f1f4"
+        ]
+      },
+      "on-navy-muted": {
+        "role": "neutral",
+        "displayName": "On-Navy Muted",
+        "canonical": "#c3c9ee",
+        "purpose": "Secondary text on navy surfaces.",
+        "tonalRamp": [
+          "#191d33",
+          "#272f5e",
+          "#313e8c",
+          "#384abd",
+          "#6271cb",
+          "#919ad4",
+          "#c0c5e2",
+          "#eff0f6"
+        ]
+      },
+      "aluminium": {
+        "role": "neutral",
+        "displayName": "Brushed Aluminium",
+        "canonical": "#eceef2",
+        "purpose": "Page ground. Elementor custom.",
+        "tonalRamp": [
+          "#22252b",
+          "#393f4b",
+          "#4f596e",
+          "#647391",
+          "#8591a8",
+          "#a7afbe",
+          "#cccfd7",
+          "#f1f2f3"
+        ]
+      },
+      "aluminium-rail": {
+        "role": "neutral",
+        "displayName": "Aluminium Rail",
+        "canonical": "#dde1e8",
+        "purpose": "Seams and rails on light grounds, dividers.",
+        "tonalRamp": [
+          "#22252b",
+          "#39404c",
+          "#4f5a6e",
+          "#637492",
+          "#8491a9",
+          "#a7afbe",
+          "#cbd0d7",
+          "#f1f2f3"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "purpose": "White sections, light list cells, white button.",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d1d1d1",
+          "#f2f2f2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page H1 on the board. Elementor Global Font Primary (800)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2, always followed by its Bangla line."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Plate numbers (2F, 122), phone number, step numbers."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step, action-strip and channel-card titles. Elementor Global Font Secondary (700)."
+      },
+      "strip": {
+        "displayName": "Strip",
+        "purpose": "Directory strip labels."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Page intros in muted colour."
+      },
+      "bangla-line": {
+        "displayName": "Bangla Line",
+        "purpose": "Bangla sub-lines under headings; magenta on light, yellow on navy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, max 68ch; 18px under 520px. Elementor Global Font Text (400)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and nav. Elementor Global Font Accent (700)."
+      }
+    },
+    "fontLoading": {
+      "family": "Anek Bangla",
+      "axes": "wdth 75..125, wght 400..800",
+      "url": "https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,400..800&display=swap",
+      "note": "Elementor's loader supplies weights only; load the width axis separately."
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 1px 2px rgb(16 24 74 / 0.06), 0 8px 24px -8px rgb(16 24 74 / 0.18)",
+        "purpose": "Button hover, map."
+      },
+      {
+        "name": "action-lift",
+        "value": "0 14px 30px -14px rgb(0 0 0 / 0.5)",
+        "purpose": "Action strip hover with 2px rise."
+      },
+      {
+        "name": "channel-lift",
+        "value": "0 24px 40px -24px rgb(0 0 0 / 0.6)",
+        "purpose": "Channel card hover with 4px rise."
+      },
+      {
+        "name": "lit-mount",
+        "value": "0 0 0 3px #10184a, 0 30px 60px -30px rgb(0 0 0 / 0.7)",
+        "purpose": "Video panels mounted in the board."
+      },
+      {
+        "name": "dock-float",
+        "value": "0 12px 30px -10px rgb(16 24 74 / 0.55)",
+        "purpose": "Mobile dock buttons."
+      },
+      {
+        "name": "plate-outline",
+        "value": "inset 0 0 0 2px rgb(255 255 255 / 0.22)",
+        "purpose": "Location plates (ghost button uses inset 0 0 0 2px currentColor)."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #f7bf18; outline-offset: 3px",
+        "purpose": "All focus-visible; #ffd34d on the navy board and footer; strips use -3px offset."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Everything that arrives, fills or lifts."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Content leaving on page change only."
+      },
+      {
+        "name": "duration-state",
+        "value": "0.3s-0.35s",
+        "purpose": "Colour changes (nav, tags, strip text)."
+      },
+      {
+        "name": "duration-fill",
+        "value": "0.4s-0.6s",
+        "purpose": "Left-to-right fills, lifts, you-are-here slide (0.6s)."
+      },
+      {
+        "name": "duration-reveal",
+        "value": "0.8s-0.9s",
+        "purpose": "Scroll reveals; 80ms sibling stagger; slats 0.12s stagger."
+      },
+      {
+        "name": "duration-zoom",
+        "value": "0.9s-1.3s",
+        "purpose": "Image hover zoom and focus-in reveal."
+      },
+      {
+        "name": "duration-floor",
+        "value": "1.6s",
+        "purpose": "Floor line draw; stops light 0.35s apart."
+      },
+      {
+        "name": "page-transition",
+        "value": "@view-transition { navigation: auto; } with names k-header (pinned), k-main (sink 0.26s out, rise 0.6s in after 0.12s), k-here (slide 0.6s), k-dock",
+        "purpose": "Cross-document View Transitions; without support, main rises in over 0.6s."
+      },
+      {
+        "name": "intro-assembly",
+        "value": "strips slat 0.85s, 70ms stagger from 180ms; lit panel rise 1.1s at 0.3s; action strip rise 0.9s at 0.62s",
+        "purpose": "Home board assembles once on first view."
+      },
+      {
+        "name": "reveal-classes",
+        "value": "k-rv (fade + 22px rise), k-rv-img (fade, scale 1.04, 6px blur clears), k-rv-slats (children unclip left-to-right), k-floor (rail draws, stops scale in)",
+        "purpose": "Applied only when html.js is set; content visible without JS. Never combine with Elementor entrance animations."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "durations 0.01ms, delays 0, reveals shown, view-transition animations off, autoplay video paused",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "520px"
+      }
+    ],
+    "accessibility": {
+      "bodyText": "19px (18px under 520px), line-height 1.6",
+      "secondaryTextMin": "18px (1.125rem)",
+      "tapTargetMin": "48px",
+      "reducedMotion": "honoured globally",
+      "standard": "WCAG 2.2 AA"
+    },
+    "elementorMap": {
+      "globalColors": {
+        "Primary": "board-navy",
+        "Secondary": "shop-magenta",
+        "Text": "ink",
+        "Accent": "here-yellow",
+        "custom": [
+          "board-strip",
+          "board-deep",
+          "aluminium",
+          "ink-muted"
+        ]
+      },
+      "globalFonts": {
+        "Primary": "Anek Bangla 800",
+        "Secondary": "Anek Bangla 700",
+        "Text": "Anek Bangla 400",
+        "Accent": "Anek Bangla 700"
+      },
+      "cssPrefix": "k-",
+      "note": "The :root --k-* custom properties in site/css/kiki.css mirror these globals."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Yellow enamel plate; white fill wipes in from the left on hover/focus.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg>Start on WhatsApp</a>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-btn-primary{position:relative;isolation:isolate;overflow:hidden}.ds-btn-primary::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-white);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-primary:hover::before,.ds-btn-primary:focus-visible::before{transform:scaleX(1)}"
+    },
+    {
+      "name": "Navy Button",
+      "kind": "button",
+      "refersTo": "button-navy",
+      "description": "Navy plate on light grounds; wipes to board-deep.",
+      "html": "<a class=\"ds-btn ds-btn-navy\" href=\"#\">See the full shop directory <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-navy{background:var(--k-navy);color:var(--k-white)}.ds-btn-navy{position:relative;isolation:isolate;overflow:hidden}.ds-btn-navy::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-navy:hover::before,.ds-btn-navy:focus-visible::before{transform:scaleX(1)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Inset 2px outline on navy; wipes to yellow.",
+      "html": "<div class=\"ds-onnavy\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Messenger</a></div>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-onnavy{background:var(--k-navy);color:var(--k-white);padding:24px}.ds-btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{color:var(--k-navy-3);box-shadow:inset 0 0 0 2px var(--k-yellow)}.ds-btn-ghost{position:relative;isolation:isolate;overflow:hidden}.ds-btn-ghost::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-ghost:hover::before,.ds-btn-ghost:focus-visible::before{transform:scaleX(1)}"
+    },
+    {
+      "name": "Header Nav with You-Are-Here Plate",
+      "kind": "nav",
+      "refersTo": "nav-link-here",
+      "description": "Board header nav; the current link holds the yellow plate that slides between pages via view-transition-name k-here.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\"><i class=\"ds-here\" aria-hidden=\"true\"></i><span>Home</span></a><a href=\"#\"><span>Shop</span></a><a href=\"#\"><span>About</span></a><a href=\"#\"><span>Contact</span></a></nav>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-nav{display:flex;gap:4px;background:var(--k-navy);padding:16px}.ds-nav a{position:relative;display:grid;place-items:center;min-height:52px;padding:0 18px;font-weight:700;font-size:1.0625rem;font-variation-settings:'wdth' 112;text-decoration:none;color:var(--k-white);border-radius:6px;transition:background-color .3s var(--k-ease),color .3s var(--k-ease)}.ds-nav a:hover{background:rgb(255 255 255/.09)}.ds-nav a:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-nav a>span{position:relative;z-index:1}.ds-nav a[aria-current=page]{color:var(--k-navy-3)}.ds-here{position:absolute;inset:0;border-radius:6px;background:var(--k-yellow);view-transition-name:k-here}"
+    },
+    {
+      "name": "Directory Strips",
+      "kind": "custom",
+      "refersTo": "directory-strip",
+      "description": "Signature: stacked navy sign strips on a board-deep rail; hover/focus/here fills yellow from the left.",
+      "html": "<ul class=\"ds-strips\"><li><a class=\"ds-strip\" href=\"#\">Wet food, cans &amp; pouches <small lang=\"bn\">ভেজা খাবার</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li><li><a class=\"ds-strip is-here\" href=\"#\" aria-current=\"location\">Dry food <small lang=\"bn\">শুকনো খাবার</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li><li><a class=\"ds-strip\" href=\"#\">Treats &amp; snacks <small lang=\"bn\">ট্রিটস</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li></ul>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-strips{display:grid;gap:3px;padding:3px;margin:0;list-style:none;background:var(--k-navy-3);border-radius:12px}.ds-strips>li:first-child .ds-strip{border-radius:9px 9px 0 0}.ds-strips>li:last-child .ds-strip{border-radius:0 0 9px 9px}.ds-strip{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1fr auto 28px;align-items:center;gap:16px;min-height:56px;padding:0 20px 0 22px;background:var(--k-navy-2);color:var(--k-white);text-decoration:none;font-weight:700;font-size:1.2rem;font-variation-settings:'wdth' 112;transition:color .35s var(--k-ease)}.ds-strip::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--k-ease)}.ds-strip small{font-size:1.125rem;font-weight:500;font-variation-settings:'wdth' 100;color:var(--k-on-navy-2);transition:color .35s var(--k-ease)}.ds-strip svg{justify-self:end;transition:transform .45s var(--k-ease)}.ds-strip:hover,.ds-strip:focus-visible,.ds-strip.is-here{color:var(--k-navy-3)}.ds-strip:hover::before,.ds-strip:focus-visible::before,.ds-strip.is-here::before{transform:scaleX(1)}.ds-strip:hover small,.ds-strip:focus-visible small,.ds-strip.is-here small{color:var(--k-navy)}.ds-strip:hover svg,.ds-strip:focus-visible svg{transform:translateX(5px)}.ds-strip:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:-3px}"
+    },
+    {
+      "name": "Action Strip",
+      "kind": "custom",
+      "refersTo": "action-strip",
+      "description": "The one yellow WhatsApp strip with the number as a numeral; lit-yellow wipe and 2px lift on hover.",
+      "html": "<a class=\"ds-action\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg><span><strong>Order on WhatsApp</strong><b>01680-042538</b></span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-action{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:16px 22px;border-radius:12px;background:var(--k-yellow);color:var(--k-navy-3);text-decoration:none;transition:transform .45s var(--k-ease),box-shadow .45s var(--k-ease)}.ds-action::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow-2);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--k-ease)}.ds-action:hover::before,.ds-action:focus-visible::before{transform:scaleX(1)}.ds-action:hover{box-shadow:0 14px 30px -14px rgb(0 0 0/.5);transform:translateY(-2px)}.ds-action:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-action>svg:first-child{width:38px;height:38px}.ds-action span{display:grid;line-height:1.15}.ds-action strong{font-size:1.3rem;font-variation-settings:'wdth' 115}.ds-action b{font-size:1.6rem;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
+    },
+    {
+      "name": "Location Plates",
+      "kind": "chip",
+      "refersTo": "location-plate",
+      "description": "Inset-outlined plates with yellow numeral blocks: real numbers as interface.",
+      "html": "<div class=\"ds-plates\"><span class=\"ds-plate\"><b>2F</b>2nd floor</span><span class=\"ds-plate\"><b>122</b>Shop</span></div>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-plates{display:flex;flex-wrap:wrap;gap:10px;background:var(--k-navy);padding:20px}.ds-plate{display:inline-flex;align-items:center;gap:14px;padding:8px 16px 8px 8px;border-radius:6px;box-shadow:inset 0 0 0 2px rgb(255 255 255/.22);font-weight:600;font-size:1.125rem;line-height:1.2;color:var(--k-on-navy-2)}.ds-plate b{display:grid;place-items:center;min-width:84px;height:56px;padding:0 12px;border-radius:4px;background:var(--k-yellow);color:var(--k-navy-3);font-size:2.1rem;line-height:1;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
+    },
+    {
+      "name": "Shelf Item Tag",
+      "kind": "card",
+      "refersTo": "shelf-tag",
+      "description": "Real product photo on a navy shelf-edge tag with a 48px yellow Ask price link.",
+      "html": "<div class=\"ds-item\"><div class=\"ds-item__img\"></div><div class=\"ds-item__tag\"><b>Wanpy</b><span>Salmon &amp; tuna, 375 g can</span><a href=\"#\">Ask price <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div></div>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-item{display:grid;max-width:260px}.ds-item__img{aspect-ratio:4/5;border-radius:12px 12px 0 0;background:#dde1e8}.ds-item__tag{display:grid;gap:2px;padding:12px 14px 14px;background:var(--k-navy);color:var(--k-white);border-radius:0 0 12px 12px}.ds-item__tag b{font-size:1.15rem;font-variation-settings:'wdth' 112;line-height:1.15}.ds-item__tag span{font-size:1.125rem;color:var(--k-on-navy-2);line-height:1.35}.ds-item__tag a{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;color:var(--k-yellow);text-decoration:none}.ds-item__tag a:hover{text-decoration:underline}.ds-item__tag a svg{transition:transform .4s var(--k-ease)}.ds-item__tag a:hover svg{transform:translateX(4px)}.ds-item__tag a:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}"
+    },
+    {
+      "name": "Channel Card",
+      "kind": "card",
+      "refersTo": "channel-card-primary",
+      "description": "Contact plate; fills from the bottom and lifts 4px on hover. Primary (WhatsApp) is yellow.",
+      "html": "<a class=\"ds-channel ds-channel--primary\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg><div><b>WhatsApp</b><span>Fastest reply</span><strong>01680-042538</strong></div></a>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-channel{position:relative;isolation:isolate;overflow:hidden;display:grid;align-content:start;gap:36px;min-height:260px;max-width:340px;padding:26px;border-radius:12px;text-decoration:none;background:var(--k-navy-2);color:var(--k-white);transition:transform .5s var(--k-ease),box-shadow .5s var(--k-ease)}.ds-channel::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--k-ease)}.ds-channel:hover::before,.ds-channel:focus-visible::before{transform:scaleY(1)}.ds-channel:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgb(0 0 0/.6)}.ds-channel:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-channel>svg{width:42px;height:42px}.ds-channel b{display:block;font-size:1.5rem;font-variation-settings:'wdth' 115}.ds-channel span{display:block;font-size:1.125rem;color:var(--k-on-navy-2);margin-top:4px}.ds-channel strong{display:block;margin-top:10px;font-size:1.8rem;font-weight:800;color:var(--k-yellow);font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}.ds-channel--primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-channel--primary::before{background:var(--k-yellow-2)}.ds-channel--primary span{color:var(--k-navy)}.ds-channel--primary strong{color:var(--k-navy-3)}"
+    },
+    {
+      "name": "Mobile Dock",
+      "kind": "nav",
+      "refersTo": "dock-order",
+      "description": "Fixed order bar under 900px; tucks away while the hero action strip is visible.",
+      "html": "<nav class=\"ds-dock\" aria-label=\"Quick contact\"><a href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg>Order on WhatsApp</a><a href=\"#\" aria-label=\"Message on Facebook Messenger\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.1 7.1V22l2.9-1.6c1.2.3 2.6.5 4 .5 5.6 0 10-4.1 10-9.6S17.6 2 12 2zm1 12.9-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z\"/></svg></a></nav>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-dock{display:grid;grid-template-columns:1fr 64px;gap:8px;max-width:420px;transition:transform .5s var(--k-ease),opacity .4s var(--k-ease)}.ds-dock.is-tucked{transform:translateY(calc(100% + 16px));opacity:0;pointer-events:none}.ds-dock a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;border-radius:10px;font-weight:800;font-size:1.15rem;font-variation-settings:'wdth' 112;text-decoration:none;box-shadow:0 12px 30px -10px rgb(16 24 74/.55)}.ds-dock a:first-child{background:var(--k-yellow);color:var(--k-navy-3)}.ds-dock a:last-child{background:var(--k-navy);color:var(--k-white)}.ds-dock a:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Market Directory Board",
+    "overview": "The site is the shopping complex's directory board, and Kiki's is the strip you came looking for. A brushed-aluminium ground carries deep navy board panels; on them sit enamel sign strips, numbered location plates and one yellow \"you are here\" state. Everything reads like signage in a Dhaka supermarket stairwell: large, expanded, heavy lettering for the signs, normal-width Anek Bangla for reading, and real numbers (2F, 122, 01680-042538) set as interface.\n\nDensity is low and type is large on purpose: body text is 19px, every tap target is at least 48px, and every enclosure does a job (a strip goes somewhere, a plate says where, a tag names a product). Depth is quiet: tonal navy layers separated by 3px seams of a deeper navy, with soft diffuse shadows only on lift. Motion is the board coming alive: strips fill yellow from the left, the yellow plate slides between pages, the floor line draws itself.\n\nThe confirmed rejection is the category default: pastel pet templates with rounded icon-card grids, paw confetti and a dog-photo hero.",
+    "keyCharacteristics": [
+      "Navy board panels on a brushed-aluminium ground; yellow is the only state colour.",
+      "One family, Anek Bangla, with the width axis carrying the voice (100 reading, 112 to 125 signage).",
+      "Enclosures are sign strips, plates and tags, joined by 3px deep-navy seams.",
+      "State is a left-to-right fill (strips, buttons, action strip); \"you are here\" is the strip itself filled yellow.",
+      "Bilingual: every section heading carries its Bangla line.",
+      "Built for 30+ eyes and thumbs: 19px body, 48px minimum targets, reduced motion honoured."
+    ],
+    "rules": [
+      {
+        "name": "The One State Colour Rule",
+        "body": "Yellow means \"here\" or \"do this\". Nothing decorative is yellow; if a surface is yellow, it is the current location or the action.",
+        "section": "colors"
+      },
+      {
+        "name": "The Magenta Stays Light Rule",
+        "body": "Shop magenta appears only on aluminium or white. On navy, use pink-on-navy for brand text and yellow for Bangla sub-lines.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Is the Voice Rule",
+        "body": "Signage (headings, strips, plates, buttons, nav) is set expanded (wdth 112 to 125); reading text and Bangla script stay at wdth 100. Never condense Bangla.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bilingual Heading Rule",
+        "body": "Every section H2 carries its Bangla line directly beneath it, set in the Bangla-line style.",
+        "section": "typography"
+      },
+      {
+        "name": "The Seam Rule",
+        "body": "Grouped items (strips, steps, address rows, feature rows) are cells in one panel separated by 3px seams of the rail colour, with 9px corners on the outer cells only. They are never separate floating cards.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Until Touched Rule",
+        "body": "Surfaces rest flat; a shadow appears only with hover lift, or as the mount of a lit panel or the floating dock.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every Elementor Global Color from these tokens (Primary board-navy, Secondary shop-magenta, Text ink, Accent here-yellow, plus custom board-strip, board-deep, aluminium, ink-muted) and set all four Global Fonts to Anek Bangla (800 / 700 / 400 / 700).",
+      "**Do** keep body text at 19px (18px on small phones) and secondary text at 18px (1.125rem) minimum.",
+      "**Do** give every link and control a 48px minimum tap target.",
+      "**Do** make state a left-to-right yellow fill; \"you are here\" is the strip or plate itself filled yellow.",
+      "**Do** group related items as seamed cells in one panel (3px seams, 9px outer corners).",
+      "**Do** use real numbers (floor, shop number, phone) as large numeral plates.",
+      "**Do** pair every section H2 with its Bangla line.",
+      "**Do** apply reveals only through the reveal classes, never with Elementor entrance animations on the same element."
+    ],
+    "donts": [
+      "**Don't** use pastel pet-template styling: rounded icon-card grids, paw confetti, or a dog-photo hero.",
+      "**Don't** add decorative boxes; every enclosure must be a strip, plate, tag or panel that does a job.",
+      "**Don't** use yellow for decoration or put shop-magenta on navy.",
+      "**Don't** use pill shapes or hard offset shadows.",
+      "**Don't** condense Bangla text or set reading text expanded."
+    ]
+  }
+}

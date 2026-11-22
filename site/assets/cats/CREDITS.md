@@ -1,0 +1,13 @@
+# Cat photo credits (Unsplash License, free to use). Source: https://unsplash.com/photos/<id>
+- paw-beans.jpg — images.unsplash.com/photo-1606425271394-c3ca9aa1fc06
+- cat-sleeping.jpg — images.unsplash.com/photo-1541781774459-bb2af2f05b55
+- cat-eating-pink.jpg — images.unsplash.com/photo-1596854331442-3cf47265cefb
+- cat-eating-bowl.jpg — images.unsplash.com/photo-1558993457-4bc6ec2c3734
+- cat-yellow.jpg — images.unsplash.com/photo-1596854407944-bf87f6fdd49e
+- cat-big-eyes.jpg — images.unsplash.com/photo-1593483316242-efb5420596ca
+- kitten-pink.jpg — images.unsplash.com/photo-1614035030394-b6e5b01e0737
+- kitten-tabby.jpg — images.unsplash.com/photo-1529778873920-4da4926a72c2
+- cat-treat.jpg — images.unsplash.com/photo-1626544379337-8a2f70ed63b7
+- cat-window.jpg — images.unsplash.com/photo-1612245229854-e69ff79cd51a
+- kittens-three.jpg — images.unsplash.com/photo-1566847438217-76e82d383f84
+- cat-basket.jpg — images.unsplash.com/photo-1615497001839-b0a0eac3274c

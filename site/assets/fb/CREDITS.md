@@ -1,0 +1,1 @@
+# Kiki's Pet Shop own media, downloaded from https://www.facebook.com/kikispetshopbd/ with owner's go-ahead (2026-11-22). reel-1.mp4 = shop tour reel 1107548368390751; reel-2.mp4 = grand-opening poster reel 1120430777081417.
