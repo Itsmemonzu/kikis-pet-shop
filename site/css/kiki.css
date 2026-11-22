@@ -183,7 +183,7 @@ html { scrollbar-color: var(--k-navy) var(--k-alu-2); }
 .k-lit video, .k-lit img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .k-lit figcaption { position: absolute; left: 12px; right: 12px; bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .k-tag { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: var(--k-r-plate); background: var(--k-navy); color: var(--k-white); font-weight: 700; font-size: 1.125rem; text-decoration: none; min-height: 48px; }
-.k-tag--live::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--k-yellow); box-shadow: 0 0 0 4px rgb(247 191 24 / 0.25); }
+.k-tag--live::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--k-yellow); }
 a.k-tag { transition: background-color 0.3s var(--k-ease), color 0.3s var(--k-ease); }
 a.k-tag:hover { background: var(--k-yellow); color: var(--k-navy-3); }
 .k-vidbtn { width: 48px; height: 48px; display: grid; place-items: center; border: 0; border-radius: var(--k-r-plate); background: var(--k-navy); color: var(--k-white); cursor: pointer; font-size: 1rem; }
@@ -196,12 +196,12 @@ a.k-tag:hover { background: var(--k-yellow); color: var(--k-navy-3); }
 .k-floor ol { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; padding: 0; list-style: none; }
 .k-floor li { display: grid; gap: 6px; justify-items: start; padding-right: 16px; }
 .k-floor li::before { content: ""; width: 34px; height: 34px; border-radius: 50%; background: var(--k-navy); box-shadow: inset 0 0 0 4px var(--k-yellow); transition: background-color 0.4s var(--k-ease), transform 0.5s var(--k-ease); }
-.k-floor li:last-child::before { background: var(--k-yellow); box-shadow: inset 0 0 0 4px var(--k-yellow), 0 0 0 6px rgb(247 191 24 / 0.25); }
+.k-floor li:last-child::before { background: var(--k-yellow); box-shadow: inset 0 0 0 4px var(--k-yellow); }
 .k-floor b { font-size: 1.25rem; font-variation-settings: "wdth" 112; }
 .k-floor span { font-size: 1.125rem; color: var(--k-on-navy-2); line-height: 1.35; }
 .k-floor--light .k-floor__rail { background: var(--k-alu-2); }
 .k-floor--light li::before { background: var(--k-white); box-shadow: inset 0 0 0 4px var(--k-navy); }
-.k-floor--light li:last-child::before { background: var(--k-yellow); box-shadow: inset 0 0 0 4px var(--k-navy), 0 0 0 6px rgb(247 191 24 / 0.35); }
+.k-floor--light li:last-child::before { background: var(--k-yellow); box-shadow: inset 0 0 0 4px var(--k-navy); }
 .k-floor--light span { color: var(--k-ink-2); }
 
 /* page board (inner page hero) */
@@ -280,7 +280,7 @@ a.k-tag:hover { background: var(--k-yellow); color: var(--k-navy-3); }
 .k-cat:last-child { border-bottom: 0; margin-bottom: 0; }
 .k-cat__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px 24px; margin-bottom: 24px; }
 .k-cat__head p { margin: 10px 0 0; color: var(--k-ink-2); }
-.k-cat__head .k-bn { color: var(--k-magenta); font-weight: 600; }
+.k-cat__head .k-bn { color: var(--k-ink-2); font-weight: 500; }
 .k-cat .k-shelf { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .k-media2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(10px, 1.4vw, 18px); }
 .k-media2 img { width: 100%; height: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--k-r-panel); }
@@ -457,11 +457,11 @@ main { view-transition-name: k-main; }
 .k-chat__bar { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: #075e54; color: #fff; }
 .k-chat__bar span { width: 40px; height: 40px; border-radius: 50%; background: #fff url("../assets/fb/logo-plate.jpg") center / 80% no-repeat; }
 .k-chat__bar b { font-size: 1.125rem; font-variation-settings: "wdth" 105; line-height: 1.2; }
-.k-chat__bar small { display: block; font-size: 1rem; font-weight: 400; opacity: 0.85; }
+.k-chat__bar small { display: block; font-size: 1.125rem; font-weight: 400; opacity: 0.85; }
 .k-chat__thread { display: grid; gap: 8px; padding: 18px 14px 20px; }
 .k-msg { position: relative; max-width: 82%; margin: 0; padding: 8px 12px 20px; border-radius: 8px; background: #fff; font-size: 1.125rem; line-height: 1.4; justify-self: start; }
 .k-msg--me { background: #d9fdd3; justify-self: end; }
 .k-msg img { width: 160px; aspect-ratio: 1; object-fit: cover; object-position: 50% 72%; border-radius: 6px; margin-bottom: 6px; }
 .k-msg time { position: absolute; right: 10px; bottom: 4px; font-size: 0.8rem; color: #667781; }
-.k-chat figcaption { padding: 8px 16px 12px; font-size: 1rem; color: #54656f; text-align: center; }
+.k-chat figcaption { padding: 8px 16px 12px; font-size: 1.125rem; color: #54656f; text-align: center; }
 @media (max-width: 900px) { .k-order { grid-template-columns: 1fr; } }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T23:59:00Z",
+  "generatedAt": "2026-11-23T00:00:00Z",
   "title": "Design System: Kiki's Pet Shop",
   "extensions": {
     "colorMeta": {
@@ -24,7 +24,7 @@
         "role": "primary",
         "displayName": "Board Strip",
         "canonical": "#202d74",
-        "purpose": "Face of directory strips, step cells, channel cards. Elementor custom.",
+        "purpose": "Face of directory strips, mobile nav cells, channel cards. Elementor custom.",
         "tonalRamp": [
           "#191d34",
           "#272f5e",
@@ -40,7 +40,7 @@
         "role": "primary",
         "displayName": "Board Deep",
         "canonical": "#10184a",
-        "purpose": "Rail/seams, lit mount, footer, text on yellow, navy hover fill. Elementor custom.",
+        "purpose": "Rail/seams, lit panel 3px border, footer, text on yellow, navy hover fill. Elementor custom.",
         "tonalRamp": [
           "#171b35",
           "#232c62",
@@ -56,7 +56,7 @@
         "role": "secondary",
         "displayName": "Shop Magenta",
         "canonical": "#c8156a",
-        "purpose": "Brand 'PET SHOP' colour; light grounds only (Bangla sub-lines, note icon). Elementor Global Color Secondary.",
+        "purpose": "Brand 'PET SHOP' colour; light grounds only (list and note icons, shop category Bangla line, Ask price hover). Elementor Global Color Secondary.",
         "tonalRamp": [
           "#391325",
           "#6a1b40",
@@ -88,7 +88,7 @@
         "role": "tertiary",
         "displayName": "Here Yellow",
         "canonical": "#f7bf18",
-        "purpose": "The only state colour: you-are-here, filled strips, action strip, primary button, numerals, focus. Elementor Global Color Accent.",
+        "purpose": "Location, action and shelf price label: you-are-here, filled strips, action strip, primary button, numerals, shelf labels, focus. Elementor Global Color Accent.",
         "tonalRamp": [
           "#3c3110",
           "#705915",
@@ -136,7 +136,7 @@
         "role": "neutral",
         "displayName": "Ink Muted",
         "canonical": "#474d6c",
-        "purpose": "Secondary text on aluminium/white (7:1). Elementor custom.",
+        "purpose": "Secondary text on aluminium/white (7:1): head paragraphs, Bangla lines under H2s, caption lines. Elementor custom.",
         "tonalRamp": [
           "#21232b",
           "#383b4c",
@@ -152,7 +152,7 @@
         "role": "neutral",
         "displayName": "On-Navy Muted",
         "canonical": "#c3c9ee",
-        "purpose": "Secondary text on navy surfaces.",
+        "purpose": "Secondary text and Bangla lines on navy surfaces.",
         "tonalRamp": [
           "#191d33",
           "#272f5e",
@@ -184,7 +184,7 @@
         "role": "neutral",
         "displayName": "Aluminium Rail",
         "canonical": "#dde1e8",
-        "purpose": "Seams and rails on light grounds, dividers.",
+        "purpose": "Seams and rails on light grounds, the shelf's 10px bottom rail, dividers.",
         "tonalRamp": [
           "#22252b",
           "#39404c",
@@ -200,7 +200,7 @@
         "role": "neutral",
         "displayName": "White",
         "canonical": "#ffffff",
-        "purpose": "White sections, light list cells, white button.",
+        "purpose": "White sections, the shelf, light list cells, white button.",
         "tonalRamp": [
           "#262626",
           "#424242",
@@ -222,25 +222,49 @@
         "displayName": "Headline",
         "purpose": "Section H2, always followed by its Bangla line."
       },
+      "numeral-step": {
+        "displayName": "Numeral Step",
+        "purpose": "Yellow step numbers on navy."
+      },
       "numeral": {
         "displayName": "Numeral",
-        "purpose": "Plate numbers (2F, 122), phone number, step numbers."
+        "purpose": "Plate numbers (2F, 122); 1.6rem under 520px."
+      },
+      "numeral-phone": {
+        "displayName": "Numeral Phone",
+        "purpose": "Phone number in the action strip and channel cards."
+      },
+      "card-title": {
+        "displayName": "Card Title",
+        "purpose": "Channel card titles."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "KIKI'S PET SHOP lockup; 1.25rem under 520px."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Step, action-strip and channel-card titles. Elementor Global Font Secondary (700)."
+        "purpose": "Step and action-strip titles. Elementor Global Font Secondary (700)."
       },
-      "strip": {
-        "displayName": "Strip",
-        "purpose": "Directory strip labels."
+      "intro": {
+        "displayName": "Intro",
+        "purpose": "Section-head paragraph; floor-line stop names at 700."
       },
       "lead": {
         "displayName": "Lead",
         "purpose": "Page intros in muted colour."
       },
+      "bangla-line-board": {
+        "displayName": "Bangla Line Board",
+        "purpose": "Bangla tagline under a page H1."
+      },
       "bangla-line": {
         "displayName": "Bangla Line",
-        "purpose": "Bangla sub-lines under headings; magenta on light, yellow on navy."
+        "purpose": "Bangla sub-lines under section H2s; ink-muted on light, on-navy-muted on navy."
+      },
+      "strip": {
+        "displayName": "Strip",
+        "purpose": "Directory strip labels, mosaic caption titles."
       },
       "body": {
         "displayName": "Body",
@@ -248,7 +272,11 @@
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Buttons and nav. Elementor Global Font Accent (700)."
+        "purpose": "Buttons, nav, tags. Elementor Global Font Accent (700)."
+      },
+      "secondary": {
+        "displayName": "Secondary",
+        "purpose": "Muted lines, captions, shelf label lines, chat bubbles; the text-size floor."
       }
     },
     "fontLoading": {
@@ -259,34 +287,19 @@
     },
     "shadows": [
       {
-        "name": "lift",
-        "value": "0 1px 2px rgb(16 24 74 / 0.06), 0 8px 24px -8px rgb(16 24 74 / 0.18)",
-        "purpose": "Button hover, map."
-      },
-      {
-        "name": "action-lift",
-        "value": "0 14px 30px -14px rgb(0 0 0 / 0.5)",
-        "purpose": "Action strip hover with 2px rise."
-      },
-      {
-        "name": "channel-lift",
-        "value": "0 24px 40px -24px rgb(0 0 0 / 0.6)",
-        "purpose": "Channel card hover with 4px rise."
-      },
-      {
-        "name": "lit-mount",
-        "value": "0 0 0 3px #10184a, 0 30px 60px -30px rgb(0 0 0 / 0.7)",
-        "purpose": "Video panels mounted in the board."
-      },
-      {
         "name": "dock-float",
         "value": "0 12px 30px -10px rgb(16 24 74 / 0.55)",
-        "purpose": "Mobile dock buttons."
+        "purpose": "Mobile dock buttons; the only cast shadow."
       },
       {
         "name": "plate-outline",
         "value": "inset 0 0 0 2px rgb(255 255 255 / 0.22)",
         "purpose": "Location plates (ghost button uses inset 0 0 0 2px currentColor)."
+      },
+      {
+        "name": "lit-border",
+        "value": "border: 3px solid #10184a",
+        "purpose": "Lit panel set into the board (replaces the old drop-shadow mount)."
       },
       {
         "name": "focus-ring",
@@ -298,7 +311,7 @@
       {
         "name": "ease-expo-out",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Everything that arrives, fills or lifts."
+        "purpose": "Everything that arrives or fills."
       },
       {
         "name": "ease-in-out",
@@ -312,8 +325,8 @@
       },
       {
         "name": "duration-fill",
-        "value": "0.4s-0.6s",
-        "purpose": "Left-to-right fills, lifts, you-are-here slide (0.6s)."
+        "value": "0.45s-0.6s",
+        "purpose": "Left-to-right fills and the you-are-here slide (0.6s). No lifts."
       },
       {
         "name": "duration-reveal",
@@ -322,8 +335,8 @@
       },
       {
         "name": "duration-zoom",
-        "value": "0.9s-1.3s",
-        "purpose": "Image hover zoom and focus-in reveal."
+        "value": "0.9s",
+        "purpose": "Shelf photo hover zoom (1.045)."
       },
       {
         "name": "duration-floor",
@@ -342,7 +355,7 @@
       },
       {
         "name": "reveal-classes",
-        "value": "k-rv (fade + 22px rise), k-rv-img (fade, scale 1.04, 6px blur clears), k-rv-slats (children unclip left-to-right), k-floor (rail draws, stops scale in)",
+        "value": "k-rv (fade + 22px rise), k-rv-img (opacity only, no blur or scale), k-rv-slats (children unclip left-to-right), k-floor (rail draws, stops scale in)",
         "purpose": "Applied only when html.js is set; content visible without JS. Never combine with Elementor entrance animations."
       },
       {
@@ -367,7 +380,7 @@
     ],
     "accessibility": {
       "bodyText": "19px (18px under 520px), line-height 1.6",
-      "secondaryTextMin": "18px (1.125rem)",
+      "secondaryTextMin": "18px (1.125rem); the example chat bar number, caption and timestamps currently undershoot (drift)",
       "tapTargetMin": "48px",
       "reducedMotion": "honoured globally",
       "standard": "WCAG 2.2 AA"
@@ -393,6 +406,21 @@
       },
       "cssPrefix": "k-",
       "note": "The :root --k-* custom properties in site/css/kiki.css mirror these globals."
+    },
+    "componentPalettes": {
+      "example-chat": {
+        "scope": "Example WhatsApp chat only; imitates the app the audience uses; never brand colours.",
+        "colors": {
+          "bar": "#075e54",
+          "bar-text": "#ffffff",
+          "wall": "#efeae2",
+          "bubble-in": "#ffffff",
+          "bubble-out": "#d9fdd3",
+          "text": "#111b21",
+          "timestamp": "#667781",
+          "caption": "#54656f"
+        }
+      }
     }
   },
   "components": [
@@ -402,7 +430,7 @@
       "refersTo": "button-primary",
       "description": "Yellow enamel plate; white fill wipes in from the left on hover/focus.",
       "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg>Start on WhatsApp</a>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-btn-primary{position:relative;isolation:isolate;overflow:hidden}.ds-btn-primary::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-white);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-primary:hover::before,.ds-btn-primary:focus-visible::before{transform:scaleX(1)}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:3px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-btn-primary{position:relative;isolation:isolate;overflow:hidden}.ds-btn-primary::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-white);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-primary:hover::before,.ds-btn-primary:focus-visible::before{transform:scaleX(1)}"
     },
     {
       "name": "Navy Button",
@@ -410,7 +438,7 @@
       "refersTo": "button-navy",
       "description": "Navy plate on light grounds; wipes to board-deep.",
       "html": "<a class=\"ds-btn ds-btn-navy\" href=\"#\">See the full shop directory <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-navy{background:var(--k-navy);color:var(--k-white)}.ds-btn-navy{position:relative;isolation:isolate;overflow:hidden}.ds-btn-navy::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-navy:hover::before,.ds-btn-navy:focus-visible::before{transform:scaleX(1)}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:3px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-btn-navy{background:var(--k-navy);color:var(--k-white)}.ds-btn-navy{position:relative;isolation:isolate;overflow:hidden}.ds-btn-navy::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-navy:hover::before,.ds-btn-navy:focus-visible::before{transform:scaleX(1)}"
     },
     {
       "name": "Ghost Button",
@@ -418,7 +446,7 @@
       "refersTo": "button-ghost",
       "description": "Inset 2px outline on navy; wipes to yellow.",
       "html": "<div class=\"ds-onnavy\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Messenger</a></div>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:6px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease),box-shadow .4s var(--k-ease)}.ds-btn:hover{box-shadow:0 1px 2px rgb(16 24 74/.06),0 8px 24px -8px rgb(16 24 74/.18)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-onnavy{background:var(--k-navy);color:var(--k-white);padding:24px}.ds-btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{color:var(--k-navy-3);box-shadow:inset 0 0 0 2px var(--k-yellow)}.ds-btn-ghost{position:relative;isolation:isolate;overflow:hidden}.ds-btn-ghost::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-ghost:hover::before,.ds-btn-ghost:focus-visible::before{transform:scaleX(1)}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:56px;padding:0 1.4em;font:700 1.125rem/1 var(--k-font);font-variation-settings:'wdth' 112;border:0;border-radius:3px;text-decoration:none;cursor:pointer;transition:transform .4s var(--k-ease)}.ds-btn:active{transform:translateY(1px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-onnavy{background:var(--k-navy);color:var(--k-white);padding:24px}.ds-btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.ds-btn-ghost:hover{color:var(--k-navy-3);box-shadow:inset 0 0 0 2px var(--k-yellow)}.ds-btn-ghost{position:relative;isolation:isolate;overflow:hidden}.ds-btn-ghost::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--k-ease)}.ds-btn-ghost:hover::before,.ds-btn-ghost:focus-visible::before{transform:scaleX(1)}"
     },
     {
       "name": "Header Nav with You-Are-Here Plate",
@@ -426,7 +454,7 @@
       "refersTo": "nav-link-here",
       "description": "Board header nav; the current link holds the yellow plate that slides between pages via view-transition-name k-here.",
       "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\"><i class=\"ds-here\" aria-hidden=\"true\"></i><span>Home</span></a><a href=\"#\"><span>Shop</span></a><a href=\"#\"><span>About</span></a><a href=\"#\"><span>Contact</span></a></nav>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-nav{display:flex;gap:4px;background:var(--k-navy);padding:16px}.ds-nav a{position:relative;display:grid;place-items:center;min-height:52px;padding:0 18px;font-weight:700;font-size:1.0625rem;font-variation-settings:'wdth' 112;text-decoration:none;color:var(--k-white);border-radius:6px;transition:background-color .3s var(--k-ease),color .3s var(--k-ease)}.ds-nav a:hover{background:rgb(255 255 255/.09)}.ds-nav a:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-nav a>span{position:relative;z-index:1}.ds-nav a[aria-current=page]{color:var(--k-navy-3)}.ds-here{position:absolute;inset:0;border-radius:6px;background:var(--k-yellow);view-transition-name:k-here}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-nav{display:flex;gap:4px;background:var(--k-navy);padding:16px}.ds-nav a{position:relative;display:grid;place-items:center;min-height:52px;padding:0 18px;font-weight:700;font-size:1.125rem;font-variation-settings:'wdth' 112;text-decoration:none;color:var(--k-white);border-radius:3px;transition:background-color .3s var(--k-ease),color .3s var(--k-ease)}.ds-nav a:hover{background:rgb(255 255 255/.09)}.ds-nav a:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-nav a>span{position:relative;z-index:1}.ds-nav a[aria-current=page]{color:var(--k-navy-3)}.ds-here{position:absolute;inset:0;border-radius:3px;background:var(--k-yellow);view-transition-name:k-here}"
     },
     {
       "name": "Directory Strips",
@@ -434,15 +462,15 @@
       "refersTo": "directory-strip",
       "description": "Signature: stacked navy sign strips on a board-deep rail; hover/focus/here fills yellow from the left.",
       "html": "<ul class=\"ds-strips\"><li><a class=\"ds-strip\" href=\"#\">Wet food, cans &amp; pouches <small lang=\"bn\">ভেজা খাবার</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li><li><a class=\"ds-strip is-here\" href=\"#\" aria-current=\"location\">Dry food <small lang=\"bn\">শুকনো খাবার</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li><li><a class=\"ds-strip\" href=\"#\">Treats &amp; snacks <small lang=\"bn\">ট্রিটস</small><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li></ul>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-strips{display:grid;gap:3px;padding:3px;margin:0;list-style:none;background:var(--k-navy-3);border-radius:12px}.ds-strips>li:first-child .ds-strip{border-radius:9px 9px 0 0}.ds-strips>li:last-child .ds-strip{border-radius:0 0 9px 9px}.ds-strip{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1fr auto 28px;align-items:center;gap:16px;min-height:56px;padding:0 20px 0 22px;background:var(--k-navy-2);color:var(--k-white);text-decoration:none;font-weight:700;font-size:1.2rem;font-variation-settings:'wdth' 112;transition:color .35s var(--k-ease)}.ds-strip::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--k-ease)}.ds-strip small{font-size:1.125rem;font-weight:500;font-variation-settings:'wdth' 100;color:var(--k-on-navy-2);transition:color .35s var(--k-ease)}.ds-strip svg{justify-self:end;transition:transform .45s var(--k-ease)}.ds-strip:hover,.ds-strip:focus-visible,.ds-strip.is-here{color:var(--k-navy-3)}.ds-strip:hover::before,.ds-strip:focus-visible::before,.ds-strip.is-here::before{transform:scaleX(1)}.ds-strip:hover small,.ds-strip:focus-visible small,.ds-strip.is-here small{color:var(--k-navy)}.ds-strip:hover svg,.ds-strip:focus-visible svg{transform:translateX(5px)}.ds-strip:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:-3px}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-strips{display:grid;gap:3px;padding:3px;margin:0;list-style:none;background:var(--k-navy-3);border-radius:4px}.ds-strips>li:first-child .ds-strip{border-radius:3px 3px 0 0}.ds-strips>li:last-child .ds-strip{border-radius:0 0 3px 3px}.ds-strip{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1fr auto 28px;align-items:center;gap:16px;min-height:56px;padding:0 20px 0 22px;background:var(--k-navy-2);color:var(--k-white);text-decoration:none;font-weight:700;font-size:1.2rem;font-variation-settings:'wdth' 112;transition:color .35s var(--k-ease)}.ds-strip::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--k-ease)}.ds-strip small{font-size:1.125rem;font-weight:500;font-variation-settings:'wdth' 100;color:var(--k-on-navy-2);transition:color .35s var(--k-ease)}.ds-strip svg{justify-self:end;transition:transform .45s var(--k-ease)}.ds-strip:hover,.ds-strip:focus-visible,.ds-strip.is-here{color:var(--k-navy-3)}.ds-strip:hover::before,.ds-strip:focus-visible::before,.ds-strip.is-here::before{transform:scaleX(1)}.ds-strip:hover small,.ds-strip:focus-visible small,.ds-strip.is-here small{color:var(--k-navy)}.ds-strip:hover svg,.ds-strip:focus-visible svg{transform:translateX(5px)}.ds-strip:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:-3px}"
     },
     {
       "name": "Action Strip",
       "kind": "custom",
       "refersTo": "action-strip",
-      "description": "The one yellow WhatsApp strip with the number as a numeral; lit-yellow wipe and 2px lift on hover.",
+      "description": "The one yellow WhatsApp strip with the number as a numeral; lit-yellow wipe on hover, no lift.",
       "html": "<a class=\"ds-action\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg><span><strong>Order on WhatsApp</strong><b>01680-042538</b></span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-action{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:16px 22px;border-radius:12px;background:var(--k-yellow);color:var(--k-navy-3);text-decoration:none;transition:transform .45s var(--k-ease),box-shadow .45s var(--k-ease)}.ds-action::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow-2);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--k-ease)}.ds-action:hover::before,.ds-action:focus-visible::before{transform:scaleX(1)}.ds-action:hover{box-shadow:0 14px 30px -14px rgb(0 0 0/.5);transform:translateY(-2px)}.ds-action:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-action>svg:first-child{width:38px;height:38px}.ds-action span{display:grid;line-height:1.15}.ds-action strong{font-size:1.3rem;font-variation-settings:'wdth' 115}.ds-action b{font-size:1.6rem;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-action{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;padding:16px 22px;border-radius:4px;background:var(--k-yellow);color:var(--k-navy-3);text-decoration:none;transition:none}.ds-action::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-yellow-2);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--k-ease)}.ds-action:hover::before,.ds-action:focus-visible::before{transform:scaleX(1)}.ds-action:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}.ds-action>svg:first-child{width:38px;height:38px}.ds-action span{display:grid;line-height:1.15}.ds-action strong{font-size:1.3rem;font-variation-settings:'wdth' 115}.ds-action b{font-size:1.6rem;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
     },
     {
       "name": "Location Plates",
@@ -450,23 +478,39 @@
       "refersTo": "location-plate",
       "description": "Inset-outlined plates with yellow numeral blocks: real numbers as interface.",
       "html": "<div class=\"ds-plates\"><span class=\"ds-plate\"><b>2F</b>2nd floor</span><span class=\"ds-plate\"><b>122</b>Shop</span></div>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-plates{display:flex;flex-wrap:wrap;gap:10px;background:var(--k-navy);padding:20px}.ds-plate{display:inline-flex;align-items:center;gap:14px;padding:8px 16px 8px 8px;border-radius:6px;box-shadow:inset 0 0 0 2px rgb(255 255 255/.22);font-weight:600;font-size:1.125rem;line-height:1.2;color:var(--k-on-navy-2)}.ds-plate b{display:grid;place-items:center;min-width:84px;height:56px;padding:0 12px;border-radius:4px;background:var(--k-yellow);color:var(--k-navy-3);font-size:2.1rem;line-height:1;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-plates{display:flex;flex-wrap:wrap;gap:10px;background:var(--k-navy);padding:20px}.ds-plate{display:inline-flex;align-items:center;gap:14px;padding:8px 16px 8px 8px;border-radius:3px;box-shadow:inset 0 0 0 2px rgb(255 255 255/.22);font-weight:600;font-size:1.125rem;line-height:1.2;color:var(--k-on-navy-2)}.ds-plate b{display:grid;place-items:center;min-width:84px;height:56px;padding:0 12px;border-radius:4px;background:var(--k-yellow);color:var(--k-navy-3);font-size:2.1rem;line-height:1;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}"
     },
     {
-      "name": "Shelf Item Tag",
+      "name": "Shelf with Labels",
       "kind": "card",
-      "refersTo": "shelf-tag",
-      "description": "Real product photo on a navy shelf-edge tag with a 48px yellow Ask price link.",
-      "html": "<div class=\"ds-item\"><div class=\"ds-item__img\"></div><div class=\"ds-item__tag\"><b>Wanpy</b><span>Salmon &amp; tuna, 375 g can</span><a href=\"#\">Ask price <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div></div>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-item{display:grid;max-width:260px}.ds-item__img{aspect-ratio:4/5;border-radius:12px 12px 0 0;background:#dde1e8}.ds-item__tag{display:grid;gap:2px;padding:12px 14px 14px;background:var(--k-navy);color:var(--k-white);border-radius:0 0 12px 12px}.ds-item__tag b{font-size:1.15rem;font-variation-settings:'wdth' 112;line-height:1.15}.ds-item__tag span{font-size:1.125rem;color:var(--k-on-navy-2);line-height:1.35}.ds-item__tag a{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;color:var(--k-yellow);text-decoration:none}.ds-item__tag a:hover{text-decoration:underline}.ds-item__tag a svg{transition:transform .4s var(--k-ease)}.ds-item__tag a:hover svg{transform:translateX(4px)}.ds-item__tag a:focus-visible{outline:3px solid var(--k-yellow-2);outline-offset:3px}"
+      "refersTo": "shelf-label",
+      "description": "Photos edge to edge on one white shelf with a 10px aluminium-rail edge; yellow 2px-corner shelf labels with an underlined Ask price link.",
+      "html": "<ul class=\"ds-shelf\"><li class=\"ds-item\"><div class=\"ds-item__img\"></div><div class=\"ds-item__tag\"><b>Wanpy</b><span>Salmon &amp; tuna, 375 g can</span><a href=\"#\">Ask price <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div></li><li class=\"ds-item\"><div class=\"ds-item__img\"></div><div class=\"ds-item__tag\"><b>Me-O</b><span>Adult dry food, 1.2 kg</span><a href=\"#\">Ask price <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div></li></ul>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-shelf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:520px;margin:0;padding:0;list-style:none;background:var(--k-white);border-bottom:10px solid #dde1e8}.ds-item{display:grid;grid-template-rows:auto 1fr}.ds-item__img{aspect-ratio:4/5;background:#eceef2}.ds-item__tag{display:grid;align-content:start;margin:0 10px 14px;padding:10px 12px 4px;background:var(--k-yellow);color:var(--k-navy-3);border-radius:2px}.ds-item__tag b{font-size:1.15rem;font-variation-settings:'wdth' 112;line-height:1.15}.ds-item__tag span{font-size:1.125rem;line-height:1.35}.ds-item__tag a{margin-top:2px;display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;color:var(--k-navy-3);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.2em}.ds-item__tag a:hover{color:var(--k-magenta)}.ds-item__tag a svg{transition:transform .4s var(--k-ease)}.ds-item__tag a:hover svg{transform:translateX(4px)}.ds-item__tag a:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}"
+    },
+    {
+      "name": "Steps",
+      "kind": "custom",
+      "refersTo": "step",
+      "description": "Plain numbered list on navy: 2.6rem yellow numerals, 1px light rules, no boxes.",
+      "html": "<ol class=\"ds-steps\"><li><b>Send a photo</b><p>Snap the can or bag you want.</p></li><li><b>We confirm stock</b><p>Usually within minutes.</p></li><li><b>Pick up or delivery</b><p>Shop 122, 2nd floor.</p></li></ol>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-steps{display:grid;margin:0;padding:24px;list-style:none;counter-reset:k;background:var(--k-navy);color:var(--k-white)}.ds-steps li{counter-increment:k;display:grid;grid-template-columns:56px 1fr;column-gap:18px;row-gap:4px;padding:22px 0;border-top:1px solid rgb(255 255 255/.16)}.ds-steps li>*{grid-column:2}.ds-steps li::before{content:counter(k);grid-row:span 2;font-weight:800;font-size:2.6rem;line-height:1;color:var(--k-yellow);font-variation-settings:'wdth' 125}.ds-steps b{font-size:1.3rem;font-variation-settings:'wdth' 112;line-height:1.2}.ds-steps p{margin:0;color:var(--k-on-navy-2);font-size:1.125rem}"
+    },
+    {
+      "name": "Example WhatsApp Chat",
+      "kind": "custom",
+      "refersTo": "chat-wall",
+      "description": "Labelled imitation of the WhatsApp thread, in WhatsApp's own component-scoped colours.",
+      "html": "<figure class=\"ds-chat\"><div class=\"ds-chat__bar\"><span aria-hidden=\"true\"></span><b>Kiki's Pet Shop<small>01680-042538</small></b></div><div class=\"ds-chat__thread\"><p class=\"ds-msg ds-msg--me\">Do you have Wanpy tuna?<time>5:12 pm</time></p><p class=\"ds-msg\">Yes, 375 g is in stock today. Should we keep one for you?<time>5:14 pm</time></p></div><figcaption>Example chat</figcaption></figure>",
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-chat{margin:0;max-width:440px;border-radius:4px;overflow:hidden;background:#efeae2;color:#111b21}.ds-chat__bar{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#075e54;color:#fff}.ds-chat__bar span{width:40px;height:40px;border-radius:50%;background:#fff}.ds-chat__bar b{font-size:1.125rem;font-variation-settings:'wdth' 105;line-height:1.2}.ds-chat__bar small{display:block;font-size:1rem;font-weight:400;opacity:.85}.ds-chat__thread{display:grid;gap:8px;padding:18px 14px 20px}.ds-msg{position:relative;max-width:82%;margin:0;padding:8px 12px 20px;border-radius:8px;background:#fff;font-size:1.125rem;line-height:1.4;justify-self:start}.ds-msg--me{background:#d9fdd3;justify-self:end}.ds-msg time{position:absolute;right:10px;bottom:4px;font-size:.8rem;color:#667781}.ds-chat figcaption{padding:8px 16px 12px;font-size:1rem;color:#54656f;text-align:center}"
     },
     {
       "name": "Channel Card",
       "kind": "card",
       "refersTo": "channel-card-primary",
-      "description": "Contact plate; fills from the bottom and lifts 4px on hover. Primary (WhatsApp) is yellow.",
+      "description": "Contact plate; fills from the bottom on hover, no lift. Primary (WhatsApp) is yellow.",
       "html": "<a class=\"ds-channel ds-channel--primary\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z\"/></svg><div><b>WhatsApp</b><span>Fastest reply</span><strong>01680-042538</strong></div></a>",
-      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-channel{position:relative;isolation:isolate;overflow:hidden;display:grid;align-content:start;gap:36px;min-height:260px;max-width:340px;padding:26px;border-radius:12px;text-decoration:none;background:var(--k-navy-2);color:var(--k-white);transition:transform .5s var(--k-ease),box-shadow .5s var(--k-ease)}.ds-channel::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--k-ease)}.ds-channel:hover::before,.ds-channel:focus-visible::before{transform:scaleY(1)}.ds-channel:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgb(0 0 0/.6)}.ds-channel:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-channel>svg{width:42px;height:42px}.ds-channel b{display:block;font-size:1.5rem;font-variation-settings:'wdth' 115}.ds-channel span{display:block;font-size:1.125rem;color:var(--k-on-navy-2);margin-top:4px}.ds-channel strong{display:block;margin-top:10px;font-size:1.8rem;font-weight:800;color:var(--k-yellow);font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}.ds-channel--primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-channel--primary::before{background:var(--k-yellow-2)}.ds-channel--primary span{color:var(--k-navy)}.ds-channel--primary strong{color:var(--k-navy-3)}"
+      "css": ":host{--k-navy:#172260;--k-navy-2:#202d74;--k-navy-3:#10184a;--k-magenta:#c8156a;--k-yellow:#f7bf18;--k-yellow-2:#ffd34d;--k-on-navy-2:#c3c9ee;--k-white:#fff;--k-font:'Anek Bangla','Noto Sans Bengali',system-ui,sans-serif;--k-ease:cubic-bezier(0.16,1,0.3,1);font-family:var(--k-font);}.ds-channel{position:relative;isolation:isolate;overflow:hidden;display:grid;align-content:start;gap:36px;min-height:260px;max-width:340px;padding:26px;border-radius:4px;text-decoration:none;background:var(--k-navy-2);color:var(--k-white);transition:none}.ds-channel::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--k-navy-3);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--k-ease)}.ds-channel:hover::before,.ds-channel:focus-visible::before{transform:scaleY(1)}.ds-channel:focus-visible{outline:3px solid var(--k-yellow);outline-offset:3px}.ds-channel>svg{width:42px;height:42px}.ds-channel b{display:block;font-size:1.5rem;font-variation-settings:'wdth' 115}.ds-channel span{display:block;font-size:1.125rem;color:var(--k-on-navy-2);margin-top:4px}.ds-channel strong{display:block;margin-top:10px;font-size:1.8rem;font-weight:800;color:var(--k-yellow);font-variant-numeric:tabular-nums lining-nums;font-variation-settings:'wdth' 125}.ds-channel--primary{background:var(--k-yellow);color:var(--k-navy-3)}.ds-channel--primary::before{background:var(--k-yellow-2)}.ds-channel--primary span{color:var(--k-navy)}.ds-channel--primary strong{color:var(--k-navy-3)}"
     },
     {
       "name": "Mobile Dock",
@@ -479,24 +523,30 @@
   ],
   "narrative": {
     "northStar": "The Market Directory Board",
-    "overview": "The site is the shopping complex's directory board, and Kiki's is the strip you came looking for. A brushed-aluminium ground carries deep navy board panels; on them sit enamel sign strips, numbered location plates and one yellow \"you are here\" state. Everything reads like signage in a Dhaka supermarket stairwell: large, expanded, heavy lettering for the signs, normal-width Anek Bangla for reading, and real numbers (2F, 122, 01680-042538) set as interface.\n\nDensity is low and type is large on purpose: body text is 19px, every tap target is at least 48px, and every enclosure does a job (a strip goes somewhere, a plate says where, a tag names a product). Depth is quiet: tonal navy layers separated by 3px seams of a deeper navy, with soft diffuse shadows only on lift. Motion is the board coming alive: strips fill yellow from the left, the yellow plate slides between pages, the floor line draws itself.\n\nThe confirmed rejection is the category default: pastel pet templates with rounded icon-card grids, paw confetti and a dog-photo hero.",
+    "overview": "The site is the shopping complex's directory board, and Kiki's is the strip you came looking for. A brushed-aluminium ground carries deep navy board panels; on them sit enamel sign strips, numbered location plates, yellow shelf labels and one yellow \"you are here\" state. Everything reads like signage and shelving in a Dhaka supermarket: large, expanded, heavy lettering for the signs, normal-width Anek Bangla for reading, and real numbers (2F, 122, 01680-042538) set as interface.\n\nDensity is low and type is large on purpose: body text is 19px, every tap target is at least 48px, and every enclosure does a job (a strip goes somewhere, a plate says where, a shelf label names a product and asks its price). Corners are nearly square, cut metal and printed card rather than soft app tiles. The board is flat: nothing lifts or casts a shadow on hover; state is a fill. Motion is the board coming alive: strips fill yellow from the left, the yellow plate slides between pages, the floor line draws itself.\n\nThe confirmed rejections are the category default (pastel pet templates with rounded icon-card grids, paw confetti and a dog-photo hero) and the generic AI-site finish the visual pass removed: soft rounded cards, hover lifts and drop shadows, icon tiles, caption plates laid over photos, blur reveals.",
     "keyCharacteristics": [
-      "Navy board panels on a brushed-aluminium ground; yellow is the only state colour.",
+      "Navy board panels on a brushed-aluminium ground; yellow marks location, action and the shelf price label.",
       "One family, Anek Bangla, with the width axis carrying the voice (100 reading, 112 to 125 signage).",
-      "Enclosures are sign strips, plates and tags, joined by 3px deep-navy seams.",
-      "State is a left-to-right fill (strips, buttons, action strip); \"you are here\" is the strip itself filled yellow.",
+      "Nearly square corners: 2px labels, 3px plates, 4px panels.",
+      "Grouped items are cells joined by 3px seams; sequences are plain numbered rows.",
+      "State is a left-to-right fill; nothing lifts or casts a shadow on hover.",
       "Bilingual: every section heading carries its Bangla line.",
       "Built for 30+ eyes and thumbs: 19px body, 48px minimum targets, reduced motion honoured."
     ],
     "rules": [
       {
-        "name": "The One State Colour Rule",
-        "body": "Yellow means \"here\" or \"do this\". Nothing decorative is yellow; if a surface is yellow, it is the current location or the action.",
+        "name": "The Yellow Means Act Rule",
+        "body": "Yellow marks where you are, what to do, or the shelf label that asks a price. Nothing decorative is yellow; real numbers and sequence numerals may be yellow because they are interface.",
         "section": "colors"
       },
       {
         "name": "The Magenta Stays Light Rule",
-        "body": "Shop magenta appears only on aluminium or white. On navy, use pink-on-navy for brand text and yellow for Bangla sub-lines.",
+        "body": "Shop magenta appears only on aluminium or white. On navy, brand text uses pink-on-navy and Bangla lines use on-navy-muted.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed Palette Rule",
+        "body": "WhatsApp's colours appear only inside the example chat, which is always labelled \"Example chat\". They never leak into buttons, strips or sections.",
         "section": "colors"
       },
       {
@@ -511,28 +561,34 @@
       },
       {
         "name": "The Seam Rule",
-        "body": "Grouped items (strips, steps, address rows, feature rows) are cells in one panel separated by 3px seams of the rail colour, with 9px corners on the outer cells only. They are never separate floating cards.",
+        "body": "Grouped items (strips, address rows, feature rows, mobile nav cells) are cells in one panel separated by 3px seams of the rail colour, with 3px corners on the outer cells only. They are never separate floating cards.",
         "section": "layout"
       },
       {
-        "name": "The Flat Until Touched Rule",
-        "body": "Surfaces rest flat; a shadow appears only with hover lift, or as the mount of a lit panel or the floating dock.",
+        "name": "The Flat Board Rule",
+        "body": "Surfaces never rise. Hover and focus change fill and colour only; the one physical response is a 1px press on active buttons. The only cast shadow is the mobile dock.",
         "section": "elevation"
       }
     ],
     "dos": [
       "**Do** set every Elementor Global Color from these tokens (Primary board-navy, Secondary shop-magenta, Text ink, Accent here-yellow, plus custom board-strip, board-deep, aluminium, ink-muted) and set all four Global Fonts to Anek Bangla (800 / 700 / 400 / 700).",
-      "**Do** keep body text at 19px (18px on small phones) and secondary text at 18px (1.125rem) minimum.",
+      "**Do** keep body text at 19px (18px on small phones) and all other text at 18px (1.125rem) minimum.",
       "**Do** give every link and control a 48px minimum tap target.",
-      "**Do** make state a left-to-right yellow fill; \"you are here\" is the strip or plate itself filled yellow.",
-      "**Do** group related items as seamed cells in one panel (3px seams, 9px outer corners).",
-      "**Do** use real numbers (floor, shop number, phone) as large numeral plates.",
+      "**Do** make state a left-to-right fill; \"you are here\" is the strip or plate itself filled yellow.",
+      "**Do** keep corners nearly square: 2px labels, 3px plates and outer cells, 4px panels.",
+      "**Do** group related items as seamed cells in one panel (3px seams, 3px outer corners).",
+      "**Do** set captions as plain text below photos.",
+      "**Do** use real numbers (floor, shop number, phone) as large numerals.",
       "**Do** pair every section H2 with its Bangla line.",
+      "**Do** label any imitation of a third-party app (\"Example chat\") and keep its colours inside it.",
       "**Do** apply reveals only through the reveal classes, never with Elementor entrance animations on the same element."
     ],
     "donts": [
       "**Don't** use pastel pet-template styling: rounded icon-card grids, paw confetti, or a dog-photo hero.",
-      "**Don't** add decorative boxes; every enclosure must be a strip, plate, tag or panel that does a job.",
+      "**Don't** add decorative boxes; every enclosure must be a strip, plate, label or panel that does a job.",
+      "**Don't** lift surfaces or add shadows on hover, and don't mount panels with drop shadows.",
+      "**Don't** put icons in coloured tiles or lay caption plates over mosaic and shelf photos.",
+      "**Don't** blur images in or out.",
       "**Don't** use yellow for decoration or put shop-magenta on navy.",
       "**Don't** use pill shapes or hard offset shadows.",
       "**Don't** condense Bangla text or set reading text expanded."
