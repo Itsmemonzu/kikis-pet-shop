@@ -12,7 +12,7 @@ WordPress + Elementor (free) is the target. No WordPress install exists locally 
 
 ## Users
 
-- Pet owners in Dhaka, mostly 30+ years old, looking for cat and dog food, litter and accessories near Kallyanpur / Mirpur Road. They want to know quickly: what's in stock, where the shop is, how to order.
+- Pet owners in Dhaka, mostly 30+ years old, looking for cat food, litter and accessories near Kallyanpur / Mirpur Road. They want to know quickly: what's in stock, where the shop is, how to order.
 - The shop owners, who will maintain the site in Elementor themselves: structure must stay simple and editable.
 
 ## Product Purpose
@@ -34,7 +34,7 @@ A neighbourhood pet shop inside Khaja Supermarket that stocks the everyday essen
 
 ## Capabilities and Constraints
 
-- Pages: Home, Shop (category browsing, no cart), About, Contact.
+- Pages: Home, Shop (category browsing, no cart), About, Contact. The site is cat-only; the dog category was removed on request (2026-11-23).
 - Language: English with Bangla lines (taglines, key labels).
 - Smooth animations and seamless page transitions are a hard requirement; must degrade cleanly under reduced motion.
 - Undecided: exact product list and prices, opening hours, delivery area/charges.

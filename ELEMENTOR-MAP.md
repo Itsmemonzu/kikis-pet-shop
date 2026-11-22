@@ -46,7 +46,7 @@ Set classes in **Advanced › CSS Classes**. Containers use Flexbox/Grid contain
 | address list | Icon List | `k-addr` |
 | map | **Google Maps** widget, address "Khaja Super Market, Kallyanpur, Dhaka", zoom 16 | `k-map` |
 | shop sidebar | Container (sticky via class) + Icon List of anchors | `k-dir__nav` inside `k-dir` |
-| shop category | Container with CSS ID `wet-food`, `dry-food`, `treats`, `litter`, `grooming`, `dogs` | `k-cat` |
+| shop category | Container with CSS ID `wet-food`, `dry-food`, `treats`, `litter`, `grooming` | `k-cat` |
 | two-photo row | Container 2 cols, 2 × Image | `k-media2` |
 | contact cards | 3 × Icon Box (link set) | `k-channels` / `k-channel` (+ `k-channel--primary`) |
 | about tour video | Video widget (`tour-full.mp4`, controls on, sound available) | `k-lit k-tour` |
@@ -74,5 +74,4 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 - Opening hours: the site says "Open every day", based on Facebook's "Always open".
 - Whether 01680042538 is on WhatsApp (assumed yes).
 - Home delivery: the site only says "ask us".
-- Dog products: the site says "mostly for cats, ask us".
 - Product names on the shelf come from the can labels in the photos. No prices are shown anywhere.

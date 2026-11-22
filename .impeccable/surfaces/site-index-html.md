@@ -11,7 +11,7 @@ Kiki's Pet Shop marketing site: Home (landing), Shop, About, Contact. Visitor mo
 
 ## Audience, action, proof
 
-- Dhaka pet owners, 30+, mostly on phones, near Kallyanpur / Mirpur Road. Cat-first (shop's own "meow-baby" voice), dog essentials secondary.
+- Dhaka pet owners, 30+, mostly on phones, near Kallyanpur / Mirpur Road. Cat-only (shop's own "meow-baby" voice); dog category removed on request.
 - Action: order on WhatsApp (01680042538) first; Messenger second; visit Shop 122 (map) third.
 - Proof: real shelf photos (Snacky, Wanpy, Paw Paw, Lola & Co, Bellotta cans), the in-store tour reel, the real address. No prices, reviews, delivery promises or hours beyond what Facebook states.
 

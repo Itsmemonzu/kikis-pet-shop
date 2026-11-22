@@ -450,3 +450,4 @@ main { view-transition-name: k-main; }
   .k-tile:first-child { grid-column: auto; }
 }
 .k-channel .k-email { font-size: clamp(1.125rem, 1rem + 0.45vw, 1.3rem); font-variation-settings: "wdth" 88; overflow-wrap: anywhere; }
+.k-note--after { margin-top: clamp(28px, 3vw, 40px); }
