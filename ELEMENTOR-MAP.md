@@ -7,7 +7,7 @@ The static prototype in `site/` is built so every section maps to an Elementor *
 | What | Where in WordPress | Value |
 |---|---|---|
 | Theme | Appearance › Themes | **Hello Elementor** (no theme styling to fight) |
-| Global Colors | Elementor › Site Settings › Global Colors | Primary `#2b2420` (ink) · Secondary `#a35d0c` (amber text) · Text `#2b2420` · Accent `#f2b13d` (honey) · plus custom: Muted text `#6b5f55`, Honey lit `#f7c766`, Page `#ffffff`, Stone `#f5f0ea`, Hairline `#e6dccf`, Footer `#2b2420` |
+| Global Colors | Elementor › Site Settings › Global Colors | Primary `#1f2430` (ink) · Secondary `#2b63b5` (logo blue) · Text `#1f2430` · Accent `#f2b13d` (honey) · plus custom: Muted text `#5a6070`, Honey lit `#f7c766`, Page `#ffffff`, Sky `#edf3fa`, Hairline `#dde5ef`, Footer `#1c2a44` |
 | Global Fonts | Site Settings › Global Fonts | All four = **Anek Bangla** (Primary 700, Secondary 600, Text 400, Accent 700) |
 | Body | Site Settings › Typography | 19px / line-height 1.6, colour Text |
 | Font loader | handled by Elementor | Elementor's Google Fonts loader is enough; the design uses the normal width only |
@@ -36,7 +36,7 @@ Set classes in **Advanced › CSS Classes**. Containers use Flexbox/Grid contain
 | WhatsApp action strip | Button widget (or HTML) | `k-action` |
 | hero photo | **Image** widget (`assets/cats/blinds-nap.webp`) + Button widget "Watch the shop tour" linking to About `#tour` | `k-hero-photo` on its container, button `k-tag` |
 | floor line | HTML widget (markup in `index.html`, `.k-floor`) | `k-floor` (`k-floor--light` on white) |
-| section wrappers | Container | `k-section`, `k-section--white`, `k-section--sand` |
+| section wrappers | Container | `k-section`, `k-section--white`, `k-section--tint` |
 | section heading row | Container (2 columns) | `k-head` |
 | H2 | Heading H2 | `k-h2 k-display` |
 | product shelf | Container grid 4 cols (2 on mobile), each item = Image + Text Editor (brand, line, link) | grid `k-shelf`; item `k-item k-rv`; image wrapper `k-item__img`; tag `k-item__tag` |
