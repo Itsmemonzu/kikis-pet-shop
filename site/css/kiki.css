@@ -485,3 +485,14 @@ html.k-lang-swap .k-intro .k-hero__tour { animation: none; }
 html.k-lang-swap.js .k-rv, html.k-lang-swap.js .k-rv-img, html.k-lang-swap.js .k-rv-slats > * { opacity: 1; transform: none; transition: none; }
 html.k-lang-swap.js .k-floor { --k-draw: 1; }
 html.k-lang-swap.js .k-floor li::before { transform: none; }
+
+/* Bangla needs taller lines: vowel signs sit above and below the letters */
+html:lang(bn) .k-h1 { line-height: 1.32; letter-spacing: 0; }
+html:lang(bn) .k-h2, html:lang(bn) h3 { line-height: 1.3; letter-spacing: 0; }
+html:lang(bn) .k-action span, html:lang(bn) .k-pill span, html:lang(bn) .k-item__tag b,
+html:lang(bn) .k-steps b, html:lang(bn) .k-plate, html:lang(bn) .k-chat__bar b,
+html:lang(bn) .k-floor b, html:lang(bn) .k-floor span, html:lang(bn) .k-channel b,
+html:lang(bn) .k-strip, html:lang(bn) .k-btn, html:lang(bn) .k-tag { line-height: 1.45; }
+html:lang(bn) .k-action span { gap: 2px; }
+html:lang(bn) .k-hero__card { gap: 18px; }
+.k-brand__name small { line-height: 1.35; }
