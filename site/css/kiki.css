@@ -470,3 +470,18 @@ main { view-transition-name: k-main; }
 html:lang(bn) .k-h1 { line-height: 1.15; }
 html:lang(bn) .k-h2, html:lang(bn) h3 { line-height: 1.2; }
 @media (max-width: 520px) { .k-lang { padding: 0 12px; } }
+
+/* language switch: one calm crossfade, scroll kept, nothing replays */
+@keyframes k-fade-out { to { opacity: 0; } }
+@keyframes k-fade-in { from { opacity: 0; } }
+html:active-view-transition-type(lang)::view-transition-old(k-main) { animation: k-fade-out 0.22s var(--k-ease-io) both; }
+html:active-view-transition-type(lang)::view-transition-new(k-main) { animation: k-fade-in 0.38s var(--k-ease) both 0.06s; }
+html:active-view-transition-type(lang)::view-transition-old(k-header) { animation: k-fade-out 0.22s var(--k-ease-io) both; }
+html:active-view-transition-type(lang)::view-transition-new(k-header) { animation: k-fade-in 0.38s var(--k-ease) both 0.06s; }
+html:active-view-transition-type(lang)::view-transition-group(k-here) { animation-duration: 0.01s; }
+html.k-lang-swap .k-intro .k-hero__img,
+html.k-lang-swap .k-intro .k-hero__card,
+html.k-lang-swap .k-intro .k-hero__tour { animation: none; }
+html.k-lang-swap.js .k-rv, html.k-lang-swap.js .k-rv-img, html.k-lang-swap.js .k-rv-slats > * { opacity: 1; transform: none; transition: none; }
+html.k-lang-swap.js .k-floor { --k-draw: 1; }
+html.k-lang-swap.js .k-floor li::before { transform: none; }

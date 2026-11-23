@@ -12,12 +12,39 @@
 <link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
 <link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
 <link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
+<link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
+<link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
+<link rel="alternate" hreflang="en" href="https://itsmemonzu.github.io/kikis-pet-shop/about.html">
   <link rel="alternate" hreflang="bn" href="https://itsmemonzu.github.io/kikis-pet-shop/bn/about.html">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400..800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/kiki.css">
-  <script>document.documentElement.classList.add("js")</script>
-  <script type="speculationrules">{"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}</script>
+  <script>
+    document.documentElement.classList.add("js");
+    /* language switch: remember scroll, mark the swap so the page crossfades instead of replaying its intro */
+    (function () {
+      var K = "kikiLangY";
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest && e.target.closest(".k-lang");
+        if (a) sessionStorage.setItem(K, String(window.scrollY));
+      });
+      addEventListener("pageswap", function (e) {
+        if (e.viewTransition && sessionStorage.getItem(K) !== null) e.viewTransition.types.add("lang");
+      });
+      function arrive(e) {
+        var y = sessionStorage.getItem(K);
+        if (y === null) return;
+        sessionStorage.removeItem(K);
+        document.documentElement.classList.add("k-lang-swap");
+        if (e && e.viewTransition) e.viewTransition.types.add("lang");
+        window.scrollTo({ top: +y, behavior: "instant" });
+      }
+      addEventListener("pagereveal", arrive);
+      document.addEventListener("DOMContentLoaded", function () { arrive(null); });
+    })();
+  </script>
+  <link rel="expect" href="#k-end" blocking="render">
+  <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".k-lang"}}]},"eagerness":"moderate"}]}</script>
 </head>
 <body>
 <a class="k-skip" href="#main">Skip to content</a>
@@ -134,6 +161,7 @@
   <a href="https://m.me/kikispetshopbd" target="_blank" rel="noopener" aria-label="Message on Facebook Messenger"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
 </nav>
 
+<div id="k-end" hidden></div>
 <script src="js/kiki.js" defer></script>
 </body>
 </html>

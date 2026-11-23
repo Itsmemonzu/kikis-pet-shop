@@ -92,4 +92,4 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 - In WordPress, install **Polylang** (free), add English and Bangla, then duplicate each Elementor page and link the pair. Copy the Bangla text from `site/bn/*.html`. Put Polylang's language switcher (a shortcode or menu item) where the `k-lang` link sits, with the `k-lang` class on it.
 - On Bangla pages the small Bangla sub-lines are removed, because the main text is already Bangla.
 - `tools/build_bn.py` regenerates `site/bn/` from the English pages using `tools/bn_strings.json`. Run `python tools/build_bn.py site tools/bn_strings.json` after editing English text, and add any new strings to the JSON.
-
+- Smooth language switch: copy the inline `<script>` from the prototype `<head>` (it remembers scroll and marks the swap) into the same `wp_head` snippet. Also add `<link rel="expect" href="#k-end" blocking="render">`, and put `<div id="k-end" hidden></div>` at the end of the footer template. Give the Polylang switcher link the class `k-lang`.
