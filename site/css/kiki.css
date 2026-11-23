@@ -493,7 +493,7 @@ main { view-transition-name: k-main; }
 .k-wall__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; }
 .k-more { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; font-weight: 700; color: var(--k-blue); }
 .k-tags { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(12px, 2vw, 28px); margin: 18px 0 0; padding: 58px 0 24px; list-style: none; }
-.k-tags::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; border-radius: 8px; background: var(--k-blue); }
+.k-tags { background: linear-gradient(var(--k-blue), var(--k-blue)) 0 0 / 100% 12px no-repeat; }
 .k-hang { --tilt: -3deg; --drop: 0px; position: relative; margin-top: var(--drop); transform: rotate(var(--tilt)); transform-origin: 50% calc(-58px - var(--drop)); transition: transform 0.9s var(--k-ease); }
 .k-hang::before { content: ""; position: absolute; left: 50%; bottom: 100%; width: 2px; height: calc(58px + var(--drop)); margin-left: -1px; background: #8f9bb0; }
 .k-hang:nth-child(2) { --tilt: 3deg; --drop: 26px; }
@@ -543,7 +543,8 @@ main { view-transition-name: k-main; }
   .k-stamp { width: 84px; height: 84px; top: auto; bottom: -18px; right: -6px; border-width: 5px; }
   .k-hang:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 6px); }
   .k-tags { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-top: 12px; row-gap: 22px; }
-  .k-tags::before, .k-hang::before { display: none; }
+  .k-tags { background: none; }
+  .k-hang::before { display: none; }
   .k-hang, .k-hang:nth-child(n) { --drop: 0px; }
   .k-hang:nth-child(odd) { --tilt: -1.5deg; }
   .k-hang:nth-child(even) { --tilt: 1.5deg; }
