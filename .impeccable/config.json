@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "nested-cards",
+        "value": "*",
+        "files": [
+          "site/index.html"
+        ],
+        "createdAt": "2026-11-23T10:34:51.323Z",
+        "reason": "user requested suirenbd.com-style framed photo inside the hero sticker panel"
+      }
+    ]
+  }
+}

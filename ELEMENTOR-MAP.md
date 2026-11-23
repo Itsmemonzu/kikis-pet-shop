@@ -75,3 +75,17 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 - Whether 01680042538 is on WhatsApp (assumed yes).
 - Home delivery: the site only says "ask us".
 - Product names on the shelf come from the can labels in the photos. No prices are shown anywhere.
+
+### Added in the playful pass (2026-11-23)
+
+| Element | Elementor | Class(es) |
+|---|---|---|
+| top bar | Container (full width, ink) with Text + Button | `k-bar` |
+| hero sticker | Container (2 columns) inside the hero section | `k-panel`; copy column `k-panel__copy`; buttons row `k-cta-row` |
+| hero photo frame | Image widget in a Container | `k-frame k-hero-photo` |
+| logo stamp | Image widget (logo), position absolute | `k-stamp` |
+| category tags on a rail | Container (grid) with 5 inner Containers, each Image + Heading + Text, link set | wrapper `k-tags`, each `k-hang`; header row `k-wall__head`, link `k-more` |
+| scattered photos | Container (position relative) with 3 Image widgets | `k-cats__photos`; images `k-frame k-snap k-snap--a/b/c` |
+| footer wordmark | Heading (p tag) | `k-bigmark` |
+
+Font: add **Baloo Da 2** (600–800) as a second Global Font for headings (`k-display`); body stays Anek Bangla.
