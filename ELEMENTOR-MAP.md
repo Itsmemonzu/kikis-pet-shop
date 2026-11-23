@@ -93,4 +93,10 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 - On Bangla pages the small Bangla sub-lines are removed, because the main text is already Bangla.
 - `tools/build_bn.py` regenerates `site/bn/` from the English pages using `tools/bn_strings.json`. Run `python tools/build_bn.py site tools/bn_strings.json` after editing English text, and add any new strings to the JSON.
 - Smooth language switch: `kiki.js` fetches the other-language page in the background and crossfades into it in place, with no reload, keeping the scroll position. It only needs the Polylang switcher link to have the class `k-lang`; nothing else in `<head>`.
-- Glass paw prints: put `<div class="k-paws" aria-hidden="true">` with 8 empty `<i></i>` inside in an HTML widget in the header template. CSS shows them only on screens 1440px and wider.
+
+### Phone-first (2026-11-23)
+
+- **Bottom tab bar** (phones and tablets ≤900px): an HTML widget in the footer template holding `<nav class="k-tabbar k-glass">` with 5 links: Home, Shop, WhatsApp "Order" (`k-tabbar__wa`), About, Contact. Mark the current page with `aria-current="page"` using the same inline script as the top nav. The top nav hides on phones.
+- **Category icons**: the same `k-pills` markup; under 620px the CSS turns it into a 3-column grid of round photos.
+- Add `viewport-fit=cover` to the viewport meta (Hello Elementor: via a `wp_head` snippet) so the tab bar clears the iPhone home bar.
+
