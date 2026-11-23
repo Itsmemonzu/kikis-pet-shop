@@ -531,3 +531,12 @@ html:lang(bn) .k-hero__card { gap: 18px; }
   .k-pill i { display: none; }
   .k-picks__head { align-items: center; }
 }
+
+/* phones: real shelf photos first, then the category icons */
+@media (max-width: 900px) {
+  main:has(.k-picks) { display: flex; flex-direction: column; }
+  main:has(.k-picks) > * { order: 3; }
+  main:has(.k-picks) > .k-hero { order: 0; }
+  main:has(.k-picks) > section[aria-labelledby="shelf-title"] { order: 1; padding-top: var(--k-section); }
+  main:has(.k-picks) > .k-picks { order: 2; padding-top: 0; }
+}
