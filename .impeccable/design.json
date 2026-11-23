@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T15:00:00Z",
+  "generatedAt": "2026-11-23T18:00:00Z",
   "title": "Design System: Kiki's Pet Shop",
   "extensions": {
     "colorMeta": {
@@ -40,7 +40,7 @@
         "role": "neutral",
         "displayName": "Ink Lift",
         "canonical": "#343b4a",
-        "purpose": "Dark button hover only."
+        "purpose": "Hover of every ink button and pill."
       },
       "honey": {
         "role": "primary",
@@ -56,7 +56,8 @@
           "#f7c766",
           "#fbdc9d",
           "#fdf0d4"
-        ]
+        ],
+        "purpose": "Action, you are here, the single hero sticker, the footer wordmark."
       },
       "honey-lit": {
         "role": "primary",
@@ -79,13 +80,15 @@
           "#7ea4dc",
           "#b3caeb",
           "#e3ecf8"
-        ]
+        ],
+        "purpose": "Links, icons, focus, tag rail, coloured photo edges, stamp ring."
       },
       "paper": {
         "role": "neutral",
         "displayName": "Paper",
         "canonical": "#ffffff",
-        "elementor": "Page (custom)"
+        "elementor": "Page (custom)",
+        "purpose": "Page ground and every sticker edge and frame."
       },
       "sky": {
         "role": "neutral",
@@ -176,11 +179,23 @@
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "The one H1 per page."
+        "purpose": "The one H1 per page, Baloo Da 2 800."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section H2s, always followed by a Bangla line."
+        "purpose": "Section H2s, Baloo Da 2 800, followed by a Bangla line."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Header and footer brand name."
+      },
+      "bigmark": {
+        "displayName": "Bigmark",
+        "purpose": "Giant honey 'kiki's' closing the footer; aria-hidden."
+      },
+      "tag-title": {
+        "displayName": "Tag title",
+        "purpose": "Hanging category tag names (1.25rem under 520px)."
       },
       "title": {
         "displayName": "Title",
@@ -196,11 +211,11 @@
       },
       "bangla-line": {
         "displayName": "Bangla line",
-        "purpose": "Bangla echo under H1 and H2s, muted 500."
+        "purpose": "Bangla echo under H1 and H2s, Anek Bangla 500; muted, ink on honey."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Nav, chips, buttons (700), captions, footer. 18px floor."
+        "purpose": "Nav, chips, top bar, buttons (700), captions, footer. 18px floor."
       },
       "numeral": {
         "displayName": "Numeral",
@@ -209,19 +224,61 @@
     },
     "shadows": [
       {
+        "name": "sticker-drop",
+        "value": "0 30px 60px -36px rgb(17 20 26 / 0.5)",
+        "purpose": "Hero sticker."
+      },
+      {
+        "name": "frame-drop",
+        "value": "0 22px 40px -26px rgb(17 20 26 / 0.55)",
+        "purpose": "Photo frames, map, media pairs (mosaic: 0 20px 36px -26px)."
+      },
+      {
+        "name": "chat-drop",
+        "value": "0 26px 50px -30px rgb(17 20 26 / 0.55)",
+        "purpose": "Example chat."
+      },
+      {
         "name": "dock-float",
-        "value": "0 10px 28px -12px rgb(28 42 68 / 0.45)",
-        "purpose": "Mobile dock buttons only; the single cast shadow in the system."
+        "value": "0 10px 28px -12px rgb(17 20 26 / 0.45)",
+        "purpose": "Mobile dock buttons."
       },
       {
-        "name": "panel-hairline",
-        "value": "inset 0 0 0 1px #dde5ef",
-        "purpose": "Outline for white panels and chips (not elevation)."
+        "name": "sticker-ring",
+        "value": "outline: 2px solid #dde5ef",
+        "purpose": "Hairline ring outside the white edge of stickers on a coloured ground (not elevation)."
+      }
+    ],
+    "tilt": [
+      {
+        "name": "sticker",
+        "value": "-0.6 to -1.4deg",
+        "purpose": "Hero (-1.1), page head (-0.7), contact card (-1.2), map (-1.4)."
       },
       {
-        "name": "ghost-hover",
-        "value": "inset 0 0 0 1.5px #5a6070",
-        "purpose": "Hover on ghost buttons."
+        "name": "frame",
+        "value": "1.5 to 2.6deg, alternating",
+        "purpose": "Hero photo (+2.6), chat (+2), media pairs (-1.5/+2), mosaic (-1.6/+1.8), tour (-2)."
+      },
+      {
+        "name": "tag",
+        "value": "-3, 3, -1.5, 4, -2.5deg; drops 0/26/8/34/12px",
+        "purpose": "Hanging tags; straighten on hover/focus over 0.9s."
+      },
+      {
+        "name": "scatter",
+        "value": "-5, 4, -2deg",
+        "purpose": "Meow-babies snaps; 5deg is the ceiling."
+      },
+      {
+        "name": "stamp",
+        "value": "12deg",
+        "purpose": "Logo stamp only."
+      },
+      {
+        "name": "mobile",
+        "value": "under 900px: roughly halved; page heads 0",
+        "purpose": "Hero -0.6/+1.5, tags +/-1.5, chat 1."
       }
     ],
     "motion": [
@@ -237,13 +294,8 @@
       },
       {
         "name": "intro-rise",
-        "value": "rise 24px, 0.9s, 60ms stagger",
-        "purpose": "First-viewport copy, once per load."
-      },
-      {
-        "name": "photo-reveal",
-        "value": "scale 1.03 to 1 + fade, 1.4s, 0.1s delay",
-        "purpose": "Hero photo on first load."
+        "value": "hero sticker rises 24px, 0.9s; photo scale 1.03 to 1, 1.3s, 0.15s delay",
+        "purpose": "First viewport, once per load."
       },
       {
         "name": "scroll-reveal",
@@ -264,6 +316,11 @@
         "name": "reduced-motion",
         "value": "all durations 0.01ms, reveals shown, view transitions off",
         "purpose": "prefers-reduced-motion: reduce."
+      },
+      {
+        "name": "tag-swing",
+        "value": "rotate to 0deg, 0.9s expo-out",
+        "purpose": "Hanging tag hover/focus."
       }
     ],
     "breakpoints": [
@@ -294,140 +351,149 @@
       "name": "Dark Button",
       "kind": "button",
       "refersTo": "button-dark",
-      "description": "Slate ink button for the header WhatsApp link and secondary CTAs.",
+      "description": "Ink button for the header WhatsApp link and secondary CTAs.",
       "html": "<a class=\"ds-btn-dark\" href=\"#\">Get directions</a>",
       "css": ".ds-btn-dark { display: inline-flex; align-items: center; min-height: 56px; padding: 0 1.4em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #fff; background: #1f2430; border-radius: 10px; text-decoration: none; transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-dark:hover, .ds-btn-dark:focus-visible { background: #343b4a; } .ds-btn-dark:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; }"
-    },
-    {
-      "name": "Ghost Button",
-      "kind": "button",
-      "refersTo": "button-ghost",
-      "description": "Transparent secondary button with a hairline ring.",
-      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Messenger</a>",
-      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; min-height: 56px; padding: 0 1.4em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #1f2430; background: transparent; border-radius: 10px; text-decoration: none; box-shadow: inset 0 0 0 1.5px #dde5ef; transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-ghost:hover { background: #fff; box-shadow: inset 0 0 0 1.5px #5a6070; } .ds-btn-ghost:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; }"
     },
     {
       "name": "Navigation with honey pill",
       "kind": "nav",
       "refersTo": "nav-link-active",
-      "description": "Pill nav links; the current page sits on the honey pill, which slides between pages.",
+      "description": "Pill nav links; the current page sits on the honey pill.",
       "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Shop</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav>",
       "css": ".ds-nav { display: flex; gap: 2px; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-nav a { display: grid; place-items: center; min-height: 48px; padding: 0 18px; font-weight: 600; font-size: 1.125rem; color: #5a6070; text-decoration: none; border-radius: 999px; transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav a:hover { color: #1f2430; background: #edf3fa; } .ds-nav a[aria-current=page] { color: #1f2430; font-weight: 700; background: #f2b13d; } .ds-nav a:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; }"
     },
     {
-      "name": "Location chip",
+      "name": "Top bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "Ink strip with the address and the WhatsApp number as a honey link.",
+      "html": "<div class=\"ds-bar\"><span>Shop 122, 2nd floor &middot; Khaja Supermarket, Kallyanpur</span><a href=\"#\">01680-042538</a></div>",
+      "css": ".ds-bar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 28px; min-height: 48px; padding: 0 16px; background: #1f2430; color: #eef3fa; font: 600 1.125rem/1.2 'Anek Bangla', system-ui, sans-serif; } .ds-bar a { display: inline-flex; align-items: center; min-height: 48px; color: #f2b13d; text-decoration: none; } .ds-bar a:hover { text-decoration: underline; } .ds-bar a:focus-visible { outline: 3px solid #f2b13d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Hero sticker",
+      "kind": "custom",
+      "refersTo": "hero-sticker",
+      "description": "Tilted honey sticker with white edge, hairline ring, ink action pill, blue-framed photo and logo stamp.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-panel__copy\"><h1>Cat food, litter and treats</h1><p lang=\"bn\">পোষা প্রাণীর সবকিছুই এক ঠিকানায়</p><a class=\"ds-pill\" href=\"#\"><span><strong>Order on WhatsApp</strong><b>01680-042538</b></span></a></div><div class=\"ds-panel__photo\"></div><span class=\"ds-stamp\"></span></div>",
+      "css": ".ds-panel { position: relative; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 32px; align-items: center; max-width: 820px; margin: 40px; padding: 36px; background: #f2b13d; color: #1f2430; border: 10px solid #fff; border-radius: 40px; outline: 2px solid #dde5ef; box-shadow: 0 30px 60px -36px rgb(17 20 26 / 0.5); transform: rotate(-1.1deg); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-panel h1 { margin: 0; font: 800 2.8rem/1 'Baloo Da 2', 'Anek Bangla', system-ui, sans-serif; letter-spacing: -0.01em; } .ds-panel p { margin: 10px 0 18px; font-weight: 500; font-size: 1.2rem; } .ds-pill { display: inline-flex; align-items: center; padding: 12px 26px 12px 18px; border-radius: 999px; background: #1f2430; color: #fff; text-decoration: none; transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-pill:hover, .ds-pill:focus-visible { background: #343b4a; } .ds-pill:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; } .ds-pill span { display: grid; line-height: 1.15; } .ds-pill b { font-size: 1.5rem; font-variant-numeric: tabular-nums lining-nums; } .ds-panel__photo { aspect-ratio: 4 / 4.3; border: 8px solid #2b63b5; border-radius: 30px; background: #edf3fa; transform: rotate(2.6deg); } .ds-stamp { position: absolute; right: -14px; top: -30px; width: 96px; height: 96px; border-radius: 50%; background: #fff; border: 6px solid #2b63b5; transform: rotate(12deg); }"
+    },
+    {
+      "name": "Hanging category tags",
       "kind": "chip",
-      "refersTo": "location-chip",
-      "description": "White pill stating where the shop is, numeral in a sky pill.",
-      "html": "<span class=\"ds-chip\"><b>2F</b>2nd floor</span>",
-      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 6px; border-radius: 999px; background: #fff; box-shadow: inset 0 0 0 1px #dde5ef; font: 600 1.125rem/1.2 'Anek Bangla', system-ui, sans-serif; color: #5a6070; } .ds-chip b { display: grid; place-items: center; min-width: 44px; height: 36px; padding: 0 10px; border-radius: 999px; background: #edf3fa; color: #1f2430; font-size: 1.15rem; font-variant-numeric: tabular-nums lining-nums; }"
+      "refersTo": "hang-tag",
+      "description": "White tags on strings from a blue rail, staggered tilt and drop, swing straight on hover.",
+      "html": "<ul class=\"ds-tags\"><li class=\"ds-hang\"><a href=\"#\"><i></i><em></em><b>Wet food</b><span lang=\"bn\">ভেজা খাবার</span></a></li><li class=\"ds-hang\"><a href=\"#\"><i></i><em></em><b>Dry food</b><span lang=\"bn\">শুকনো খাবার</span></a></li><li class=\"ds-hang\"><a href=\"#\"><i></i><em></em><b>Treats</b><span lang=\"bn\">ট্রিটস</span></a></li></ul>",
+      "css": ".ds-tags { position: relative; display: grid; grid-template-columns: repeat(3, 160px); gap: 24px; margin: 0; padding: 58px 0 24px; list-style: none; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-tags::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 12px; border-radius: 8px; background: #2b63b5; } .ds-hang { --tilt: -3deg; --drop: 0px; position: relative; margin-top: var(--drop); transform: rotate(var(--tilt)); transform-origin: 50% calc(-58px - var(--drop)); transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); } .ds-hang:nth-child(2) { --tilt: 3deg; --drop: 26px; } .ds-hang:nth-child(3) { --tilt: -1.5deg; --drop: 8px; } .ds-hang::before { content: ''; position: absolute; left: 50%; bottom: 100%; width: 2px; height: calc(58px + var(--drop)); margin-left: -1px; background: #5a6070; } .ds-hang:hover, .ds-hang:focus-within { transform: rotate(0deg); } .ds-hang a { position: relative; display: grid; gap: 2px; padding: 26px 12px 16px; background: #fff; border: 2px solid #1f2430; border-radius: 24px; color: #1f2430; text-decoration: none; } .ds-hang a:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; } .ds-hang i { position: absolute; left: 50%; top: 9px; width: 34px; height: 10px; margin-left: -17px; border-radius: 6px; background: #1f2430; } .ds-hang em { display: block; aspect-ratio: 1; margin-bottom: 10px; border-radius: 16px; background: #edf3fa; } .ds-hang b { font: 700 1.45rem/1.1 'Baloo Da 2', 'Anek Bangla', system-ui, sans-serif; } .ds-hang span { font-size: 1.125rem; color: #5a6070; }"
+    },
+    {
+      "name": "Scattered photo frames",
+      "kind": "card",
+      "refersTo": "photo-frame",
+      "description": "Thick-edged frames with soft neutral drops, scattered at alternating tilts; one honey and one blue edge.",
+      "html": "<div class=\"ds-scatter\"><figure class=\"ds-frame ds-a\"></figure><figure class=\"ds-frame ds-b\"></figure><figure class=\"ds-frame ds-c\"></figure></div>",
+      "css": ".ds-scatter { position: relative; width: 420px; height: 380px; } .ds-frame { position: absolute; margin: 0; aspect-ratio: 3 / 4; background: #edf3fa; border: 8px solid #fff; border-radius: 26px; box-shadow: 0 22px 40px -26px rgb(17 20 26 / 0.55); } .ds-a { left: 0; top: 6%; width: 50%; z-index: 2; border-color: #f2b13d; transform: rotate(-5deg); } .ds-b { right: 6%; top: 0; width: 40%; z-index: 1; transform: rotate(4deg); } .ds-c { right: 0; bottom: 0; width: 44%; aspect-ratio: 4 / 3.4; z-index: 3; border-color: #2b63b5; transform: rotate(-2deg); }"
+    },
+    {
+      "name": "Page head sticker",
+      "kind": "custom",
+      "refersTo": "page-sticker",
+      "description": "Inner page head on a sky sticker with white edge and hairline ring, tilted -0.7deg.",
+      "html": "<header class=\"ds-pagehead\"><h1>What we sell</h1><p>Cat food, litter, treats and grooming.</p></header>",
+      "css": ".ds-pagehead { max-width: 720px; margin: 24px; padding: 36px; background: #edf3fa; color: #1f2430; border: 8px solid #fff; outline: 2px solid #dde5ef; border-radius: 34px; transform: rotate(-0.7deg); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-pagehead h1 { margin: 0; font: 800 3rem/1 'Baloo Da 2', 'Anek Bangla', system-ui, sans-serif; letter-spacing: -0.01em; } .ds-pagehead p { margin: 12px 0 0; font-size: 1.2rem; color: #5a6070; }"
     },
     {
       "name": "Category rows panel",
       "kind": "custom",
       "refersTo": "category-row",
-      "description": "White panel of rows with sub-label and sliding arrow; the active row turns honey.",
-      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row is-here\" href=\"#\">Wet food <small>ভেজা খাবার</small><i>&rarr;</i></a></li><li><a class=\"ds-row\" href=\"#\">Dry food <small>শুকনো খাবার</small><i>&rarr;</i></a></li><li><a class=\"ds-row\" href=\"#\">Litter <small>লিটার</small><i>&rarr;</i></a></li></ul>",
-      "css": ".ds-rows { margin: 0; padding: 4px 0; list-style: none; background: #fff; border-radius: 14px; box-shadow: inset 0 0 0 1px #dde5ef; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-rows li + li { border-top: 1px solid #dde5ef; } .ds-row { display: grid; grid-template-columns: 1fr auto 24px; align-items: center; gap: 16px; min-height: 58px; padding: 0 20px; color: #1f2430; text-decoration: none; font-weight: 600; font-size: 1.2rem; border-radius: 10px; transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-row small { font-size: 1.125rem; font-weight: 500; color: #5a6070; } .ds-row i { font-style: normal; justify-self: end; color: #5a6070; transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1); } .ds-row:hover, .ds-row:focus-visible { background: #edf3fa; } .ds-row:focus-visible { outline: 3px solid #2b63b5; outline-offset: -3px; } .ds-row:hover i { transform: translateX(4px); color: #1f2430; } .ds-row.is-here { background: #f2b13d; } .ds-row.is-here small, .ds-row.is-here i { color: #1f2430; }"
+      "description": "Flat white panel of rows with sliding arrow; the row in view turns honey.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row is-here\" href=\"#\">Wet food <small>ভেজা খাবার</small><i>&rarr;</i></a></li><li><a class=\"ds-row\" href=\"#\">Dry food <small>শুকনো খাবার</small><i>&rarr;</i></a></li></ul>",
+      "css": ".ds-rows { margin: 0; padding: 4px 0; list-style: none; max-width: 320px; background: #fff; border-radius: 14px; border: 1px solid #dde5ef; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-rows li + li { border-top: 1px solid #dde5ef; } .ds-row { display: grid; grid-template-columns: 1fr auto 24px; align-items: center; gap: 16px; min-height: 58px; padding: 0 20px; color: #1f2430; text-decoration: none; font-weight: 600; font-size: 1.2rem; border-radius: 10px; transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-row small { font-size: 1.125rem; font-weight: 500; color: #5a6070; } .ds-row i { font-style: normal; color: #5a6070; transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1); } .ds-row:hover, .ds-row:focus-visible { background: #edf3fa; } .ds-row:focus-visible { outline: 3px solid #2b63b5; outline-offset: -3px; } .ds-row:hover i { transform: translateX(4px); color: #1f2430; } .ds-row.is-here { background: #f2b13d; } .ds-row.is-here small, .ds-row.is-here i { color: #1f2430; }"
     },
     {
-      "name": "WhatsApp action",
+      "name": "Footer with bigmark",
       "kind": "custom",
-      "refersTo": "whatsapp-action",
-      "description": "The hero's honey ordering block with the phone number in large numerals.",
-      "html": "<a class=\"ds-action\" href=\"#\"><svg width=\"34\" height=\"34\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z\"/></svg><span><strong>Order on WhatsApp</strong><b>01680-042538</b></span><i>&rarr;</i></a>",
-      "css": ".ds-action { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; padding: 14px 22px 14px 18px; border-radius: 14px; background: #f2b13d; color: #1f2430; text-decoration: none; font-family: 'Anek Bangla', system-ui, sans-serif; transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-action:hover, .ds-action:focus-visible { background: #f7c766; } .ds-action:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; } .ds-action span { display: grid; line-height: 1.15; } .ds-action strong { font-size: 1.2rem; } .ds-action b { font-size: 1.6rem; font-variant-numeric: tabular-nums lining-nums; letter-spacing: 0.01em; } .ds-action i { font-style: normal; font-size: 1.2rem; transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1); } .ds-action:hover i { transform: translateX(4px); }"
-    },
-    {
-      "name": "Shelf item",
-      "kind": "card",
-      "refersTo": "shelf-label",
-      "description": "Real shelf photo over a quiet label: hairline top, ink brand, muted line, blue Ask price link.",
-      "html": "<div class=\"ds-item\"><div class=\"ds-item__img\"></div><div class=\"ds-item__tag\"><b>Wanpy</b><span>Salmon &amp; tuna, 375 g can</span><a href=\"#\">Ask price &rarr;</a></div></div>",
-      "css": ".ds-item { width: 240px; background: #fff; border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px #dde5ef; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-item__img { aspect-ratio: 4 / 5; background: #edf3fa; } .ds-item__tag { display: grid; gap: 2px; padding: 14px 16px 8px; border-top: 1px solid #dde5ef; color: #1f2430; } .ds-item__tag b { font-size: 1.15rem; line-height: 1.15; } .ds-item__tag span { font-size: 1.125rem; line-height: 1.35; color: #5a6070; } .ds-item__tag a { display: inline-flex; align-items: center; min-height: 48px; font-weight: 700; color: #2b63b5; text-decoration: none; } .ds-item__tag a:hover { text-decoration: underline; } .ds-item__tag a:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; }"
-    },
-    {
-      "name": "Step with honey disc",
-      "kind": "custom",
-      "refersTo": "title",
-      "description": "Numbered step: 48px honey disc, title, muted line, hairline above.",
-      "html": "<ol class=\"ds-steps\"><li><b>Send us a message</b><p>Write the product name, or send a photo of the pack.</p></li><li><b>We confirm price</b><p>We reply with today&rsquo;s price and stock.</p></li></ol>",
-      "css": ".ds-steps { margin: 0; padding: 0; list-style: none; counter-reset: k; font-family: 'Anek Bangla', system-ui, sans-serif; color: #1f2430; } .ds-steps li { counter-increment: k; display: grid; grid-template-columns: 56px 1fr; column-gap: 18px; row-gap: 4px; padding: 22px 0; border-top: 1px solid #dde5ef; } .ds-steps li > * { grid-column: 2; } .ds-steps li::before { content: counter(k); grid-row: span 2; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #f2b13d; font-weight: 700; font-size: 1.4rem; line-height: 1; } .ds-steps b { font-size: 1.3rem; line-height: 1.2; } .ds-steps p { margin: 0; color: #5a6070; font-size: 1.125rem; }"
-    },
-    {
-      "name": "Contact reach",
-      "kind": "card",
-      "refersTo": "whatsapp-card",
-      "description": "Large honey WhatsApp card beside a quiet rows list of secondary channels.",
-      "html": "<div class=\"ds-reach\"><a class=\"ds-wa\" href=\"#\"><b>WhatsApp</b><span>Orders and prices</span><em>01680-042538</em></a><ul class=\"ds-rows2\"><li><a href=\"#\"><b>Messenger</b><small>@kikispetshopbd</small></a></li><li><a href=\"#\"><b>Email</b><small>kikis.petshopbd@gmail.com</small></a></li></ul></div>",
-      "css": ".ds-reach { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; max-width: 760px; font-family: 'Anek Bangla', system-ui, sans-serif; color: #1f2430; } .ds-wa { display: grid; align-content: space-between; min-height: 260px; padding: 26px; border-radius: 14px; background: #f2b13d; color: #1f2430; text-decoration: none; transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-wa:hover, .ds-wa:focus-visible { background: #f7c766; } .ds-wa:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; } .ds-wa b { font-size: 1.5rem; } .ds-wa span { font-size: 1.125rem; } .ds-wa em { font-style: normal; font-weight: 700; font-size: 2.2rem; font-variant-numeric: tabular-nums lining-nums; } .ds-rows2 { align-content: center; display: grid; margin: 0; padding: 4px 0; list-style: none; background: #fff; border-radius: 14px; box-shadow: inset 0 0 0 1px #dde5ef; } .ds-rows2 li + li { border-top: 1px solid #dde5ef; } .ds-rows2 a { display: grid; padding: 14px 20px; color: #1f2430; text-decoration: none; border-radius: 10px; } .ds-rows2 a:hover { background: #edf3fa; } .ds-rows2 a:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; } .ds-rows2 small { font-size: 1.125rem; color: #5a6070; overflow-wrap: anywhere; }"
-    },
-    {
-      "name": "Mobile dock",
-      "kind": "custom",
-      "refersTo": "button-primary",
-      "description": "Floating two-button order bar under 900px; the only shadowed element.",
-      "html": "<nav class=\"ds-dock\"><a href=\"#\">Order on WhatsApp</a><a href=\"#\" aria-label=\"Messenger\">M</a></nav>",
-      "css": ".ds-dock { display: grid; grid-template-columns: 1fr 64px; gap: 8px; max-width: 380px; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-dock a { display: flex; align-items: center; justify-content: center; min-height: 60px; border-radius: 14px; font-weight: 700; font-size: 1.15rem; text-decoration: none; box-shadow: 0 10px 28px -12px rgb(28 42 68 / 0.45); } .ds-dock a:first-child { background: #f2b13d; color: #1f2430; } .ds-dock a:last-child { background: #1f2430; color: #fff; } .ds-dock a:focus-visible { outline: 3px solid #2b63b5; outline-offset: 3px; }"
+      "refersTo": "footer-bigmark",
+      "description": "Deep blue footer closing on a giant honey Baloo wordmark.",
+      "html": "<footer class=\"ds-foot\"><h2>Visit</h2><a href=\"#\">Shop 122, Kallyanpur</a><p class=\"ds-bigmark\" aria-hidden=\"true\">kiki's</p></footer>",
+      "css": ".ds-foot { padding: 40px 24px 24px; background: #1c2a44; color: #b7c3d6; font: 400 1.125rem/1.5 'Anek Bangla', system-ui, sans-serif; overflow: hidden; } .ds-foot h2 { margin: 0 0 8px; font-size: 1.125rem; color: #f2b13d; } .ds-foot a { display: inline-flex; align-items: center; min-height: 48px; color: #eef3fa; text-decoration: none; } .ds-foot a:hover { color: #f2b13d; text-decoration: underline; } .ds-foot a:focus-visible { outline: 3px solid #f2b13d; outline-offset: 3px; } .ds-bigmark { margin: 28px 0 0; font: 800 clamp(4.5rem, 16vw, 9rem)/0.8 'Baloo Da 2', 'Anek Bangla', system-ui, sans-serif; letter-spacing: -0.01em; color: #f2b13d; text-align: center; }"
     }
   ],
   "narrative": {
-    "northStar": "The Golden Hour Shop",
-    "overview": "A calm, sunlit neighbourhood pet shop dressed in its own logo's colours: honey paw yellow against line-drawing blue. The page is clean white with pale sky sections. The golden-hour cat photos the owner supplied and the shop's own shelf photos bring the warmth, and the interface stays quiet so they can. Honey marks the two things a visitor needs: where to act (WhatsApp) and where they are (the nav pill, the active category row). Blue does the quiet work: links, icons, the wordmark.\n\nDensity is compact but legible, built for 30+ readers on phones: a 19px body, no readable text below 18px, every target at least 48px, and tight section rhythm with no empty bands. Surfaces are flat, and panels are drawn with a 1px inset hairline. Motion is a soft expo-out arrival. There is one signature move: the honey pill slides between nav links on page change while the content rises in, and the floor line draws itself on scroll.\n\nThe world replaces the retired navy directory-board and rejects the pastel, paw-confetti pet template.",
+    "northStar": "The Sticker Table",
+    "overview": "A sunny neighbourhood pet shop laid out by hand, in its own logo's colours: honey paw yellow and line-drawing blue. Each page reads like a table someone arranged. One honey sticker holds the home hero. Category tags hang from a blue rail. Cat photos sit in thick white frames, scattered at small angles. The page heads are pale sky stickers. Every placed object has a thick white (or logo-blue) edge, a slight tilt and a soft neutral drop shadow. Text, rows and shelves underneath stay straight and calm, so the playful layer frames the content without getting in its way.\n\nHoney still marks where to act and where you are (the nav pill, the active category row, the WhatsApp card). It also signs the brand in exactly two big places: the hero sticker and the footer wordmark. Blue does the quiet work: links, icons, the wordmark accent, the tag rail and the photo edges. Baloo Da 2, a rounded Bengali-capable display face, gives headings and the wordmark their friendly weight. Anek Bangla carries body copy and every Bangla line.\n\nDensity stays compact and legible for readers 30 and over on phones. Body text is 19px, no readable text goes below 18px, every target is at least 48px, and section rhythm stays tight. The world rejects the retired navy directory board and the pastel paw-confetti pet template. Its looseness came from the suirenbd.com reference, rebuilt in Kiki's own palette.",
     "keyCharacteristics": [
-      "The logo's pair: honey for action and \"you are here\", logo blue for links, icons and the wordmark.",
-      "White page, pale sky alternate sections, cool hairlines; deep blue only in the footer.",
-      "User-supplied photography leads the imagery; warmth lives in the photos.",
-      "Anek Bangla at normal width for everything, English and Bangla side by side.",
-      "Flat: the mobile dock is the only element that casts a shadow.",
-      "Compact rhythm: sections 48–84px, short gaps after page heads.",
-      "Rounded but not soft: 10px controls, 14px photos and panels, pills for nav, chips and tags."
+      "Hand-placed objects: stickers, frames and tags tilt between 0.6 and 5 degrees, and neighbours alternate direction.",
+      "Thick sticker edges: 8px white (10px on the hero sticker) or logo blue, on generous radii from 24 to 40px.",
+      "Soft neutral drops (rgb(17 20 26 / 0.5–0.55)) under placed objects only; rows, shelves, buttons and chips stay flat.",
+      "The logo's pair: honey to act and mark \"you are here\" (plus the hero sticker and footer wordmark), blue for links, icons and edges.",
+      "Baloo Da 2 800 for display, Anek Bangla for body and Bangla.",
+      "An ink top bar above a white header; the footer is deep blue with a huge honey wordmark.",
+      "The owner's photos lead every image slot."
     ],
     "rules": [
       {
         "name": "The One Honey Rule",
-        "body": "Honey means \"act here\" or \"you are here\". It never decorates, never fills a section, label or caption, and never carries any text colour but ink.",
+        "body": "Honey means \"act here\" or \"you are here\". Beyond that, it signs the brand only as the single hero sticker, the footer wordmark and at most one photo edge per scatter. It never fills labels, captions, tags or ordinary sections. Text on honey is always ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Inverted Action Rule",
+        "body": "When an action sits on honey, it inverts to an ink pill with white text and a honey glyph. Never put honey on honey.",
         "section": "colors"
       },
       {
         "name": "The Logo Pair Rule",
-        "body": "Honey acts, blue informs. Links and icons on light grounds are blue, never honey; a call to act is honey, never blue.",
+        "body": "Honey acts, blue informs. Links and icons on light grounds are blue, never honey. A call to act is honey (or ink on honey), never blue.",
         "section": "colors"
       },
       {
+        "name": "The Two Voices Rule",
+        "body": "Baloo Da 2 is for display only: H1, H2, the wordmark, tag titles and the bigmark. Anek Bangla is for everything you read, and for every Bangla line. Use no third face, and no condensed or expanded widths.",
+        "section": "typography"
+      },
+      {
         "name": "The Eighteen Floor Rule",
-        "body": "No readable text below 18px (1.125rem). The only exception is the decorative chat timestamps (0.875rem), which are hidden from assistive tech.",
+        "body": "No readable text below 18px (1.125rem). The only exception is the decorative chat timestamps (0.875rem), which are aria-hidden.",
         "section": "typography"
       },
       {
-        "name": "The One Family Rule",
-        "body": "Use Anek Bangla at normal width only. No second display face, and no condensed or expanded widths.",
-        "section": "typography"
-      },
-      {
-        "name": "The Only the Dock Floats Rule",
-        "body": "The mobile dock is the single element with a cast shadow. Everything else is flat.",
+        "name": "The Soft Drop Rule",
+        "body": "Only placed objects cast shadows, and every shadow is neutral rgb(17 20 26), soft, and has a negative spread. Never use a tinted, hard or offset shadow. Rows, shelves, buttons, chips and tags stay flat.",
         "section": "elevation"
+      },
+      {
+        "name": "The Sticker Edge Rule",
+        "body": "Every placed object wears a thick edge: 8px of paper, or 10px on the hero sticker. Within a group, one or two objects may swap white for a logo-blue or honey edge (the hero photo, the tour video, two of the three scattered photos), but never all of them. A sticker that sits on a coloured ground (the hero sticker, the page head, the contact card) adds a 2px hairline ring outside its white edge. The inner image's radius is the outer radius minus the edge (26 → 18, 30 → 22).",
+        "section": "shapes"
+      },
+      {
+        "name": "The Hand-Placed Tilt Rule",
+        "body": "Tilt depends on size. Big stickers (the hero, page heads, the contact card, the map) lean 0.6–1.4deg. Frames, media pairs, the chat and tour video lean 1.5–2.6deg. Hanging tags lean 1.5–4deg. Only the scattered snaps reach 5deg, and only the logo stamp goes to 12deg. Neighbours alternate direction, and a child may counter-rotate its parent (the hero sticker at -1.1deg, its photo at +2.6deg). Text never tilts on its own; it rides its sticker. Under 900px, tilts roughly halve and page heads go straight. Hover straightens only the hanging tags (0.9s expo-out); no other placed object rotates on hover.",
+        "section": "shapes"
       }
     ],
     "dos": [
-      "Do let the user-supplied photos lead every image slot; the shop's own shelf photos are the product proof.",
-      "Do keep honey for action and \"you are here\" only, always with ink text.",
-      "Do use logo blue for links and icons on paper and sky.",
-      "Do draw panels with a 1px inset hairline on paper and separate sections with sky.",
-      "Do keep section rhythm compact: 48–84px sections, 16–32px after a page head.",
-      "Do keep every readable line at 18px or larger and every target at 48px or larger.",
-      "Do pair each H1 and H2 with its Bangla line in muted 500.",
-      "Do put captions below photos, never on top, except the single tour tag pill.",
-      "Do keep text contrast at WCAG AA, honour reduced motion and keep content visible without JavaScript."
+      "Do give every placed object a thick edge (8px paper, 10px on the hero sticker) and a tilt from the Hand-Placed Tilt scale, alternating direction with its neighbours.",
+      "Do keep text, rows, shelves and lists straight; let them ride a sticker rather than tilt on their own.",
+      "Do halve tilts under 900px and straighten page heads.",
+      "Do use only neutral rgb(17 20 26) drops with a negative spread, and only under placed objects.",
+      "Do set H1, H2, the wordmark and tag titles in Baloo Da 2; set body and every Bangla line in Anek Bangla.",
+      "Do keep honey for action, \"you are here\", the single hero sticker and the footer wordmark, always with ink text.",
+      "Do invert the action to an ink pill when it sits on honey.",
+      "Do let the owner's photos lead every image slot, with captions below, never on top (except the tour tag pill).",
+      "Do keep every readable line at 18px or larger, every target at 48px or larger, contrast at WCAG AA, and content visible without JavaScript."
     ],
     "donts": [
       "Don't return to the navy signboard world, or drift into pastel paw-confetti pet styling.",
-      "Don't fill labels, captions or shelf tags with honey.",
-      "Don't add shadows to cards, photos or buttons; only the mobile dock floats.",
+      "Don't tilt beyond 5deg (the logo stamp is the only exception) or tilt everything the same way.",
+      "Don't use hard, offset or tinted shadows, or put shadows on buttons, chips, rows or shelves.",
+      "Don't add a second honey sticker or fill tags, labels or captions with honey.",
+      "Don't give every object in a group a coloured edge; most edges are white.",
       "Don't use the WhatsApp chat colours outside the example chat.",
-      "Don't add a second typeface or use Anek Bangla's condensed or expanded widths.",
-      "Don't put muted or blue text on honey; ink only."
+      "Don't add a third typeface, or set Bangla text in Baloo Da 2.",
+      "Don't put muted or blue text on honey; use ink only."
     ]
   }
 }

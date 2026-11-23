@@ -7,7 +7,7 @@ The static prototype in `site/` is built so every section maps to an Elementor *
 | What | Where in WordPress | Value |
 |---|---|---|
 | Theme | Appearance › Themes | **Hello Elementor** (no theme styling to fight) |
-| Global Colors | Elementor › Site Settings › Global Colors | Primary `#1f2430` (ink) · Secondary `#2b63b5` (logo blue) · Text `#1f2430` · Accent `#f2b13d` (honey) · plus custom: Muted text `#5a6070`, Honey lit `#f7c766`, Page `#ffffff`, Sky `#edf3fa`, Hairline `#dde5ef`, Footer `#1c2a44` |
+| Global Colors | Elementor › Site Settings › Global Colors | Primary `#27307A` (navy) · Secondary `#D7B35C` (gold) · Text `#1D2352` · Accent `#D7B35C` · plus custom: Muted text `#4C517A`, Gold lit `#E4C77F`, Page `#F3E7C8` (cream), Light cream `#FBF5E6` |
 | Global Fonts | Site Settings › Global Fonts | All four = **Anek Bangla** (Primary 700, Secondary 600, Text 400, Accent 700) |
 | Body | Site Settings › Typography | 19px / line-height 1.6, colour Text |
 | Font loader | handled by Elementor | Elementor's Google Fonts loader is enough; the design uses the normal width only |
@@ -76,16 +76,13 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 - Home delivery: the site only says "ask us".
 - Product names on the shelf come from the can labels in the photos. No prices are shown anywhere.
 
-### Added in the playful pass (2026-11-23)
+### Glass and layout (2026-11-23)
 
 | Element | Elementor | Class(es) |
 |---|---|---|
-| top bar | Container (full width, ink) with Text + Button | `k-bar` |
-| hero sticker | Container (2 columns) inside the hero section | `k-panel`; copy column `k-panel__copy`; buttons row `k-cta-row` |
-| hero photo frame | Image widget in a Container | `k-frame k-hero-photo` |
-| logo stamp | Image widget (logo), position absolute | `k-stamp` |
-| category tags on a rail | Container (grid) with 5 inner Containers, each Image + Heading + Text, link set | wrapper `k-tags`, each `k-hang`; header row `k-wall__head`, link `k-more` |
-| scattered photos | Container (position relative) with 3 Image widgets | `k-cats__photos`; images `k-frame k-snap k-snap--a/b/c` |
-| footer wordmark | Heading (p tag) | `k-bigmark` |
+| frosted panel (header, hero card, pills, shelf case, order panel, lists, page heads) | any Container | `k-glass` (+ `k-panel` for inner padding). Elementor free has no backdrop blur control; the class supplies it |
+| page background light | Site Settings › Background: colour `#F3E7C8` | the soft navy/gold light comes from the global CSS on `body` |
+| hero | Container (min-height ~76vh, background image `blinds-nap.webp`, cover) with an inner glass Container | `k-hero__stage`; card `k-hero__card k-glass`; tour button `k-tag k-hero__tour` |
+| category pills | Icon List or 5 small Containers (Image + Heading + Text, link set) | `k-pills`, each `k-pill k-glass` |
+| meow-babies | Container 2 columns: Image (big) + Container (glass card + 2 Images) | `k-feature__grid`, `k-feature__main`, `k-feature__card k-glass`, `k-feature__pair` |
 
-Font: add **Baloo Da 2** (600–800) as a second Global Font for headings (`k-display`); body stays Anek Bangla.
