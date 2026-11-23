@@ -1,17 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T20:00:00Z",
+  "generatedAt": "2026-11-23T22:00:00Z",
   "title": "Design System: Kiki's Pet Shop",
   "extensions": {
     "colorMeta": {
       "navy": { "role": "primary", "displayName": "Shop Navy", "canonical": "#27307a", "elementor": "Primary", "tonalRamp": ["#12173d", "#1d2352", "#27307a", "#343e94", "#5a63ad", "#8e95c9", "#c4c8e6", "#eceef8"] },
       "navy-lift": { "role": "primary", "displayName": "Navy Lift", "canonical": "#343e94", "tonalRamp": ["#12173d", "#1d2352", "#27307a", "#343e94", "#5a63ad", "#8e95c9", "#c4c8e6", "#eceef8"] },
-      "gold": { "role": "secondary", "displayName": "Soft Gold", "canonical": "#d7b35c", "elementor": "Secondary, Accent", "tonalRamp": ["#4a3a12", "#7a6020", "#a07a1f", "#c19a3f", "#d7b35c", "#e4c77f", "#f0dfb2", "#faf3e0"] },
-      "gold-lit": { "role": "secondary", "displayName": "Gold, Lit", "canonical": "#e4c77f", "elementor": "Gold lit", "tonalRamp": ["#4a3a12", "#7a6020", "#a07a1f", "#c19a3f", "#d7b35c", "#e4c77f", "#f0dfb2", "#faf3e0"] },
+      "gold": { "role": "secondary", "displayName": "Bright Gold", "canonical": "#f0cc6e", "elementor": "Secondary, Accent", "tonalRamp": ["#4a3a12", "#7a6020", "#a07a1f", "#c9a440", "#f0cc6e", "#f6dc95", "#faebc4", "#fdf7e6"] },
+      "gold-lit": { "role": "secondary", "displayName": "Gold, Lit", "canonical": "#f6dc95", "elementor": "Gold lit", "tonalRamp": ["#4a3a12", "#7a6020", "#a07a1f", "#c9a440", "#f0cc6e", "#f6dc95", "#faebc4", "#fdf7e6"] },
+      "gold-deep": { "role": "secondary", "displayName": "Deep Gold (wordmark on cream only)", "canonical": "#a07a1f", "tonalRamp": ["#4a3a12", "#7a6020", "#a07a1f", "#c9a440", "#f0cc6e", "#f6dc95", "#faebc4", "#fdf7e6"] },
       "ink": { "role": "neutral", "displayName": "Navy Ink", "canonical": "#1d2352", "elementor": "Text", "tonalRamp": ["#0e1129", "#1d2352", "#2c3368", "#4c517a", "#767a9a", "#a2a5bd", "#cfd1de", "#f0f1f6"] },
       "ink-muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#4c517a", "elementor": "Muted text", "tonalRamp": ["#0e1129", "#1d2352", "#2c3368", "#4c517a", "#767a9a", "#a2a5bd", "#cfd1de", "#f0f1f6"] },
       "cream": { "role": "neutral", "displayName": "Cream", "canonical": "#f3e7c8", "elementor": "Page", "tonalRamp": ["#5c5440", "#8f8466", "#c2b48f", "#e0d2ad", "#f3e7c8", "#f7eed6", "#fbf5e6", "#fffcf5"] },
-      "cream-light": { "role": "neutral", "displayName": "Light Cream", "canonical": "#fbf5e6", "elementor": "Light cream", "tonalRamp": ["#5c5440", "#8f8466", "#c2b48f", "#e0d2ad", "#f3e7c8", "#f7eed6", "#fbf5e6", "#fffcf5"] },
+      "cream-light": { "role": "neutral", "displayName": "Light Cream (paper)", "canonical": "#fbf5e6", "elementor": "Light cream", "tonalRamp": ["#5c5440", "#8f8466", "#c2b48f", "#e0d2ad", "#f3e7c8", "#f7eed6", "#fbf5e6", "#fffcf5"] },
       "white": { "role": "neutral", "displayName": "White", "canonical": "#ffffff" },
       "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "rgb(39 48 122 / 0.14)" },
       "glass": { "role": "neutral", "displayName": "Glass", "canonical": "rgb(255 251 240 / 0.58)" },
@@ -26,14 +27,15 @@
       "chat-time": { "role": "neutral", "displayName": "Chat Timestamp (WhatsApp, chat only)", "canonical": "#4f5d66" }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "The one H1 per page, navy, balanced." },
-      "headline": { "displayName": "Headline", "purpose": "Section H2s, each followed by a Bangla line." },
+      "display": { "displayName": "Display", "purpose": "The one H1 per page, navy, balanced. Bangla: line-height 1.32, no tracking." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2s. Bangla: line-height 1.3, no tracking." },
       "wordmark": { "displayName": "Wordmark", "purpose": "KIKI'S PET SHOP in the header and footer." },
-      "title": { "displayName": "Title", "purpose": "Pill names, shelf brands, step titles, floor-line stops." },
+      "title": { "displayName": "Title", "purpose": "Shelf brands, step titles, floor-line stops, channel names, category labels." },
       "lead": { "displayName": "Lead", "purpose": "Inner-page intro, muted, max 60ch." },
       "body": { "displayName": "Body", "purpose": "Paragraphs at max 68ch; 18px under 520px." },
-      "bangla-line": { "displayName": "Bangla line", "purpose": "The Bangla echo under the H1 and every H2." },
-      "label": { "displayName": "Label", "purpose": "Nav, chips, sub-labels, captions, footer text; buttons at 700." },
+      "body-bn": { "displayName": "Body (Bangla pages)", "purpose": "Same size, line-height 1.7 so vowel signs never collide." },
+      "tagline-bn": { "displayName": "Bangla tagline", "purpose": "The one Bangla line on English pages, under the hero H1." },
+      "label": { "displayName": "Label", "purpose": "Nav, chips, sub-labels, captions, footer text; buttons, tags and the language switch at 700. Compact Bangla labels at line-height 1.45." },
       "numeral": { "displayName": "Numeral", "purpose": "Phone numbers and the 2F / 122 badges." }
     },
     "glass": {
@@ -42,24 +44,34 @@
       "edge": "1px solid rgb(255 255 255 / 0.7)",
       "backdropFilter": "blur(18px) saturate(1.35)",
       "fallback": "#fbf5e6 where backdrop-filter is unsupported",
-      "pageLight": "cream #f3e7c8 with four fixed radial gradients: gold 0.55 top-right, navy 0.20 left, navy 0.16 bottom-right, gold 0.35 bottom-left (scrolls under 900px)"
+      "usedOn": "Only layers that float over content: header (glass), tab bar, hero card and photo tags (glass-strong).",
+      "pageGround": "plain cream #f3e7c8, no gradients"
+    },
+    "paper": {
+      "fill": "#fbf5e6",
+      "border": "1px solid rgb(39 48 122 / 0.14)",
+      "radius": "18px",
+      "shadow": "none",
+      "usedOn": "Shelf case, lists, notes, address, rows, order panel, feature card, map frame."
     },
     "shadows": [
-      { "name": "navy-lift", "value": "0 22px 50px -32px rgb(29 35 82 / 0.55)", "purpose": "Glass panels, the hero stage, photos, the map, the chat, the contact card." },
-      { "name": "glass-highlight", "value": "inset 0 1px 0 rgb(255 255 255 / 0.75)", "purpose": "Top highlight paired with navy-lift on the full glass recipe." }
+      { "name": "navy-lift", "value": "0 14px 34px -22px rgb(29 35 82 / 0.45)", "purpose": "Only floating layers: header, tab bar, the tab bar's Order disc, hero card." },
+      { "name": "glass-highlight", "value": "inset 0 1px 0 rgb(255 255 255 / 0.75)", "purpose": "Top highlight paired with navy-lift on the glass recipe." }
     ],
     "motion": [
       { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default easing for reveals, hovers and page transitions." },
-      { "name": "ease-in-out", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "The outgoing page sink in View Transitions." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "Anything leaving: the outgoing page and the language fade-out." },
       { "name": "intro", "value": "photo scale 1.04 to 1 over 1.6s; card rises 24px over 0.9s at 0.2s; tour tag at 0.45s", "purpose": "First viewport, once." },
       { "name": "reveal", "value": "rise 20px, 0.8-0.9s, 80ms sibling stagger", "purpose": "Scroll reveals, JS only." },
       { "name": "floor-draw", "value": "scaleX 0 to 1 over 1.6s; stops pop at 0.35s steps", "purpose": "The directions line draws on scroll." },
       { "name": "page-transition", "value": "old main sinks 12px over 0.26s; new main rises over 0.6s at 0.12s; gold pill slides 0.6s; header still", "purpose": "Cross-document View Transitions." },
+      { "name": "lang-crossfade", "value": "header and main fade out 0.22s, fade in 0.38s at 0.06s; scroll kept; intro, reveals and floor line shown at rest", "purpose": "In-place English/Bangla switch (view transition type 'lang')." },
       { "name": "reduced-motion", "value": "all animation and transition durations 0.01ms; content shown at rest", "purpose": "prefers-reduced-motion: reduce." }
     ],
     "breakpoints": [
       { "name": "tight", "value": "1100px" },
       { "name": "stack", "value": "900px" },
+      { "name": "cats", "value": "620px" },
       { "name": "phone", "value": "520px" }
     ]
   },
@@ -70,96 +82,110 @@
       "refersTo": "button-primary",
       "description": "Gold pill for the main call to act.",
       "html": "<button class=\"ds-btn\">Start a WhatsApp order</button>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; gap: .6em; min-height: 56px; padding: 0 1.5em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #1d2352; background: #d7b35c; border: 0; border-radius: 999px; cursor: pointer; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover, .ds-btn:focus-visible { background: #e4c77f; } .ds-btn:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; } .ds-btn:active { transform: translateY(1px); }"
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: .6em; min-height: 56px; padding: 0 1.5em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #1d2352; background: #f0cc6e; border: 0; border-radius: 999px; cursor: pointer; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover, .ds-btn:focus-visible { background: #f6dc95; } .ds-btn:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; } .ds-btn:active { transform: translateY(1px); }"
     },
     {
       "name": "Dark Button",
       "kind": "button",
       "refersTo": "button-dark",
       "description": "Navy pill for secondary calls and the header WhatsApp button.",
-      "html": "<button class=\"ds-btn-dark\">See the shop</button>",
+      "html": "<button class=\"ds-btn-dark\">WhatsApp us</button>",
       "css": ".ds-btn-dark { display: inline-flex; align-items: center; gap: .6em; min-height: 56px; padding: 0 1.5em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #fbf5e6; background: #27307a; border: 0; border-radius: 999px; cursor: pointer; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-btn-dark:hover, .ds-btn-dark:focus-visible { background: #343e94; } .ds-btn-dark:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
     },
     {
       "name": "Ghost Button",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Frosted glass pill beside a primary call.",
+      "description": "Outlined navy pill beside a primary call; fills white on hover.",
       "html": "<div class=\"ds-ground\"><button class=\"ds-btn-ghost\">Messenger</button></div>",
-      "css": ".ds-ground { padding: 24px; background: #f3e7c8 radial-gradient(240px 240px at 90% 0%, rgb(215 179 92 / .55), transparent 62%); } .ds-btn-ghost { min-height: 56px; padding: 0 1.5em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #27307a; background: rgb(255 251 240 / .58); border: 1px solid rgb(255 255 255 / .7); border-radius: 999px; -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); cursor: pointer; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ghost:hover, .ds-btn-ghost:focus-visible { background: rgb(255 251 240 / .78); } .ds-btn-ghost:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
+      "css": ".ds-ground { padding: 24px; background: #f3e7c8; } .ds-btn-ghost { min-height: 56px; padding: 0 1.5em; font: 700 1.125rem/1 'Anek Bangla', system-ui, sans-serif; color: #27307a; background: transparent; border: 1.5px solid rgb(39 48 122 / .35); border-radius: 999px; cursor: pointer; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ghost:hover, .ds-btn-ghost:focus-visible { background: #ffffff; } .ds-btn-ghost:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
     },
     {
       "name": "Glass Header and Nav",
       "kind": "nav",
       "refersTo": "header",
-      "description": "Floating glass bar; the current page sits on the gold pill.",
-      "html": "<div class=\"ds-ground\"><nav class=\"ds-header\"><b class=\"ds-mark\">KIKI'S <span>PET SHOP</span></b><span class=\"ds-nav\"><a class=\"is-here\" href=\"#\">Home</a><a href=\"#\">Shop</a><a href=\"#\">About</a><a href=\"#\">Contact</a></span></nav></div>",
-      "css": ".ds-ground { padding: 24px; background: #f3e7c8 radial-gradient(260px 260px at 90% 0%, rgb(215 179 92 / .55), transparent 62%), radial-gradient(220px 220px at 0% 100%, rgb(39 48 122 / .2), transparent 62%); } .ds-header { display: flex; align-items: center; gap: 20px; min-height: 72px; padding: 0 18px; border-radius: 22px; background: rgb(255 251 240 / .58); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 22px 50px -32px rgb(29 35 82 / .55); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-mark { font-size: 1.35rem; font-weight: 800; color: #27307a; margin-right: auto; } .ds-nav { display: flex; gap: 2px; } .ds-nav a { display: grid; place-items: center; min-height: 48px; padding: 0 18px; border-radius: 999px; font-weight: 600; font-size: 1.125rem; color: #4c517a; text-decoration: none; transition: background-color .3s cubic-bezier(0.16,1,0.3,1), color .3s; } .ds-nav a:hover { color: #27307a; background: rgb(255 255 255 / .55); } .ds-nav a.is-here { background: #d7b35c; color: #1d2352; font-weight: 700; } .ds-nav a:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
+      "description": "Floating glass bar; the current page sits on the gold pill; language switch beside it.",
+      "html": "<div class=\"ds-ground\"><nav class=\"ds-header\"><b class=\"ds-mark\">KIKI'S <span>PET SHOP</span></b><span class=\"ds-nav\"><a class=\"is-here\" href=\"#\">Home</a><a href=\"#\">Shop</a><a href=\"#\">About</a><a href=\"#\">Contact</a></span><a class=\"ds-lang\" href=\"#\" lang=\"bn\">বাংলা</a></nav></div>",
+      "css": ".ds-ground { padding: 24px; background: #f3e7c8; } .ds-header { display: flex; align-items: center; gap: 20px; min-height: 72px; padding: 0 18px; border-radius: 22px; background: rgb(255 251 240 / .58); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 14px 34px -22px rgb(29 35 82 / .45); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-mark { font-size: 1.35rem; font-weight: 800; color: #27307a; margin-right: auto; } .ds-mark span { color: #a07a1f; } .ds-nav { display: flex; gap: 2px; } .ds-nav a { display: grid; place-items: center; min-height: 48px; padding: 0 18px; border-radius: 999px; font-weight: 600; font-size: 1.125rem; color: #4c517a; text-decoration: none; transition: background-color .3s cubic-bezier(0.16,1,0.3,1), color .3s; } .ds-nav a:hover { color: #27307a; background: rgb(255 255 255 / .55); } .ds-nav a.is-here { background: #f0cc6e; color: #1d2352; font-weight: 700; } .ds-lang { display: inline-flex; align-items: center; min-height: 48px; padding: 0 16px; border-radius: 999px; border: 1px solid rgb(39 48 122 / .14); color: #27307a; font-weight: 700; font-size: 1.125rem; text-decoration: none; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-lang:hover, .ds-lang:focus-visible { background: rgb(255 255 255 / .6); } .ds-nav a:focus-visible, .ds-lang:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Phone Tab Bar",
+      "kind": "nav",
+      "refersTo": "tabbar",
+      "description": "Fixed glass bar under 900px; active tab on a gold pill; raised navy Order disc in the middle.",
+      "html": "<div class=\"ds-ground\"><nav class=\"ds-tabbar\"><a class=\"is-here\" href=\"#\"><i></i><span>Home</span></a><a href=\"#\"><i></i><span>Shop</span></a><a class=\"ds-order\" href=\"#\"><i><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z\"/></svg></i><span>Order</span></a><a href=\"#\"><i></i><span>About</span></a><a href=\"#\"><i></i><span>Contact</span></a></nav></div>",
+      "css": ".ds-ground { padding: 48px 12px 16px; background: #f3e7c8; max-width: 420px; } .ds-tabbar { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: end; padding: 6px; border-radius: 26px; background: rgb(255 251 240 / .78); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 14px 34px -22px rgb(29 35 82 / .45); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-tabbar a { display: grid; justify-items: center; gap: 3px; min-height: 58px; padding: 6px 2px 4px; color: #4c517a; text-decoration: none; font-weight: 600; font-size: 1rem; line-height: 1.2; border-radius: 18px; } .ds-tabbar i { display: grid; place-items: center; width: 52px; height: 30px; border-radius: 999px; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-tabbar i:empty::before { content: ''; width: 18px; height: 18px; border-radius: 4px; background: currentColor; opacity: .7; } .ds-tabbar a.is-here { color: #27307a; font-weight: 700; } .ds-tabbar a.is-here i { background: #f0cc6e; color: #1d2352; } .ds-tabbar .ds-order { color: #27307a; font-weight: 700; } .ds-tabbar .ds-order i { width: 58px; height: 58px; margin-top: -30px; border-radius: 50%; background: #27307a; color: #f0cc6e; border: 4px solid #fbf5e6; box-shadow: 0 14px 34px -22px rgb(29 35 82 / .45); } .ds-tabbar a:focus-visible { outline: 3px solid #27307a; outline-offset: 2px; }"
     },
     {
       "name": "Hero Glass Card",
       "kind": "card",
       "refersTo": "hero-card",
-      "description": "Frosted card bottom-left on the full photo stage, with the navy WhatsApp action.",
+      "description": "Glass-strong card bottom-left on the photo stage, with the navy WhatsApp action.",
       "html": "<div class=\"ds-stage\"><div class=\"ds-card\"><span class=\"ds-chip\"><b>122</b>Shop</span><h1>Cat food, litter and treats in Kallyanpur</h1><a class=\"ds-action\" href=\"#\"><span><strong>Order on WhatsApp</strong><b>01680-042538</b></span></a></div></div>",
-      "css": ".ds-stage { display: flex; align-items: flex-end; min-height: 420px; padding: 24px; border-radius: 36px; background: linear-gradient(160deg, #e4a85a, #8a5a2b); box-shadow: 0 22px 50px -32px rgb(29 35 82 / .55); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-card { display: grid; gap: 16px; justify-items: start; max-width: 520px; padding: 28px; border-radius: 26px; background: rgb(255 251 240 / .78); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 22px 50px -32px rgb(29 35 82 / .55); } .ds-card h1 { margin: 0; font-size: 2.6rem; line-height: 1.02; letter-spacing: -0.015em; font-weight: 700; color: #27307a; } .ds-chip { display: inline-flex; align-items: center; gap: 10px; padding: 5px 14px 5px 5px; border-radius: 999px; background: rgb(255 255 255 / .7); font-weight: 600; font-size: 1.125rem; color: #4c517a; } .ds-chip b { display: grid; place-items: center; min-width: 44px; height: 36px; border-radius: 999px; background: #27307a; color: #fbf5e6; font-variant-numeric: tabular-nums; } .ds-action { display: inline-flex; padding: 12px 24px; border-radius: 999px; background: #27307a; color: #fbf5e6; text-decoration: none; transition: background-color .35s cubic-bezier(0.16,1,0.3,1); } .ds-action span { display: grid; line-height: 1.15; } .ds-action b { font-size: 1.5rem; font-variant-numeric: tabular-nums lining-nums; } .ds-action:hover, .ds-action:focus-visible { background: #343e94; }"
+      "css": ".ds-stage { display: flex; align-items: flex-end; min-height: 420px; padding: 24px; border-radius: 24px; background: linear-gradient(160deg, #e4a85a, #8a5a2b); font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-card { display: grid; gap: 16px; justify-items: start; max-width: 520px; padding: 28px; border-radius: 18px; background: rgb(255 251 240 / .78); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 14px 34px -22px rgb(29 35 82 / .45); } .ds-card h1 { margin: 0; font-size: 2.6rem; line-height: 1.02; letter-spacing: -0.015em; font-weight: 700; color: #27307a; } .ds-chip { display: inline-flex; align-items: center; gap: 10px; padding: 5px 14px 5px 5px; border-radius: 999px; background: rgb(255 255 255 / .7); font-weight: 600; font-size: 1.125rem; color: #4c517a; } .ds-chip b { display: grid; place-items: center; min-width: 44px; height: 36px; border-radius: 999px; background: #27307a; color: #fbf5e6; font-variant-numeric: tabular-nums; } .ds-action { display: inline-flex; padding: 12px 24px; border-radius: 999px; background: #27307a; color: #fbf5e6; text-decoration: none; transition: background-color .35s cubic-bezier(0.16,1,0.3,1); } .ds-action span { display: grid; line-height: 1.15; } .ds-action b { font-size: 1.5rem; font-variant-numeric: tabular-nums lining-nums; } .ds-action:hover, .ds-action:focus-visible { background: #343e94; } .ds-action:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
     },
     {
-      "name": "Glass Category Pill",
+      "name": "Category Photo",
       "kind": "chip",
-      "refersTo": "category-pill",
-      "description": "Glass pill with a round photo, navy title and Bangla sub-label.",
-      "html": "<div class=\"ds-ground\"><a class=\"ds-pill\" href=\"#\"><span class=\"ds-thumb\"></span><span><b>Wet food</b><small lang=\"bn\">ভেজা খাবার</small></span></a></div>",
-      "css": ".ds-ground { padding: 24px; background: #f3e7c8 radial-gradient(240px 240px at 90% 0%, rgb(215 179 92 / .55), transparent 62%); } .ds-pill { display: inline-flex; align-items: center; gap: 14px; padding: 8px 22px 8px 8px; border-radius: 999px; color: #1d2352; text-decoration: none; background: rgb(255 251 240 / .58); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); box-shadow: inset 0 1px 0 rgb(255 255 255 / .75), 0 22px 50px -32px rgb(29 35 82 / .55); font-family: 'Anek Bangla', system-ui, sans-serif; transition: background-color .3s cubic-bezier(0.16,1,0.3,1), transform .4s cubic-bezier(0.16,1,0.3,1); } .ds-pill:hover, .ds-pill:focus-visible { background: rgb(255 251 240 / .78); transform: translateY(-2px); } .ds-thumb { width: 64px; height: 64px; border-radius: 50%; background: #c19a3f; } .ds-pill > span:last-child { display: grid; line-height: 1.2; } .ds-pill b { font-size: 1.2rem; color: #27307a; } .ds-pill small { font-size: 1.125rem; color: #4c517a; }"
+      "refersTo": "category-photo",
+      "description": "Round photo with a white ring and hairline, navy label below, no frame.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-cat\" href=\"#\"><span class=\"ds-photo\"></span><b>Wet food</b></a></div>",
+      "css": ".ds-ground { padding: 24px; background: #f3e7c8; } .ds-cat { display: inline-grid; justify-items: center; gap: 10px; color: #27307a; text-decoration: none; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-photo { width: 104px; height: 104px; border-radius: 50%; background: linear-gradient(160deg, #e4a85a, #8a5a2b); border: 3px solid #ffffff; outline: 1px solid rgb(39 48 122 / .14); transition: transform .4s cubic-bezier(0.16,1,0.3,1); } .ds-cat b { font-size: 1.15rem; line-height: 1.25; } .ds-cat:hover .ds-photo, .ds-cat:focus-visible .ds-photo { transform: scale(1.05); } .ds-cat:hover b { text-decoration: underline; text-underline-offset: .2em; } .ds-cat:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; border-radius: 8px; }"
     },
     {
-      "name": "Glass Rows List",
+      "name": "Paper Rows List",
       "kind": "card",
       "refersTo": "category-row",
-      "description": "Glass panel of hairline-divided rows; the row in view turns gold.",
-      "html": "<div class=\"ds-ground\"><ul class=\"ds-rows\"><li><a class=\"is-here\" href=\"#\">Wet food <small>ভেজা খাবার</small></a></li><li><a href=\"#\">Dry food <small>শুকনো খাবার</small></a></li><li><a href=\"#\">Litter <small>লিটার</small></a></li></ul></div>",
-      "css": ".ds-ground { padding: 24px; background: #f3e7c8 radial-gradient(240px 240px at 0% 50%, rgb(39 48 122 / .2), transparent 62%); } .ds-rows { margin: 0; padding: 4px 0; list-style: none; max-width: 320px; background: rgb(255 251 240 / .58); -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35); border: 1px solid rgb(255 255 255 / .7); border-radius: 26px; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-rows li + li { border-top: 1px solid rgb(39 48 122 / .14); margin-inline: 18px; } .ds-rows li + li a { margin-inline: -18px; } .ds-rows a { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 56px; padding: 0 20px; border-radius: 18px; color: #1d2352; text-decoration: none; font-weight: 600; font-size: 1.15rem; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-rows small { font-size: 1.125rem; font-weight: 500; color: #4c517a; } .ds-rows a:hover, .ds-rows a:focus-visible { background: rgb(255 255 255 / .6); } .ds-rows a.is-here { background: #d7b35c; } .ds-rows a.is-here small { color: #1d2352; } .ds-rows a:focus-visible { outline: 3px solid #27307a; outline-offset: -3px; }"
+      "description": "Flat paper panel of hairline-divided rows; the row in view turns gold.",
+      "html": "<div class=\"ds-ground\"><ul class=\"ds-rows\"><li><a class=\"is-here\" href=\"#\">Wet food <small>Pouches and cans</small></a></li><li><a href=\"#\">Dry food <small>Kibble</small></a></li><li><a href=\"#\">Litter <small>Sand and boxes</small></a></li></ul></div>",
+      "css": ".ds-ground { padding: 24px; background: #f3e7c8; } .ds-rows { margin: 0; padding: 4px 0; list-style: none; max-width: 320px; background: #fbf5e6; border: 1px solid rgb(39 48 122 / .14); border-radius: 18px; font-family: 'Anek Bangla', system-ui, sans-serif; } .ds-rows li + li { border-top: 1px solid rgb(39 48 122 / .14); margin-inline: 18px; } .ds-rows li + li a { margin-inline: -18px; } .ds-rows a { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 56px; padding: 0 20px; border-radius: 18px; color: #1d2352; text-decoration: none; font-weight: 600; font-size: 1.15rem; transition: background-color .3s cubic-bezier(0.16,1,0.3,1); } .ds-rows small { font-size: 1.125rem; font-weight: 500; color: #4c517a; } .ds-rows a:hover, .ds-rows a:focus-visible { background: rgb(255 255 255 / .6); } .ds-rows a.is-here { background: #f0cc6e; } .ds-rows a.is-here small { color: #1d2352; } .ds-rows a:focus-visible { outline: 3px solid #27307a; outline-offset: -3px; }"
     },
     {
       "name": "Contact WhatsApp Card",
       "kind": "card",
       "refersTo": "whatsapp-card",
-      "description": "Opaque gold card leading the contact page.",
+      "description": "Flat gold card leading the contact page.",
       "html": "<a class=\"ds-wa\" href=\"#\"><b>WhatsApp</b><span>Fastest way to order</span><strong>01680-042538</strong></a>",
-      "css": ".ds-wa { display: grid; gap: 6px; max-width: 360px; padding: 32px; border-radius: 26px; background: #d7b35c; color: #1d2352; text-decoration: none; box-shadow: 0 22px 50px -32px rgb(29 35 82 / .55); font-family: 'Anek Bangla', system-ui, sans-serif; transition: background-color .35s cubic-bezier(0.16,1,0.3,1); } .ds-wa b { font-size: 1.5rem; } .ds-wa span { font-size: 1.125rem; } .ds-wa strong { margin-top: 10px; font-size: 2.2rem; font-variant-numeric: tabular-nums lining-nums; letter-spacing: .01em; } .ds-wa:hover, .ds-wa:focus-visible { background: #e4c77f; } .ds-wa:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
+      "css": ".ds-wa { display: grid; gap: 6px; max-width: 360px; padding: 32px; border-radius: 18px; background: #f0cc6e; color: #1d2352; text-decoration: none; font-family: 'Anek Bangla', system-ui, sans-serif; transition: background-color .35s cubic-bezier(0.16,1,0.3,1); } .ds-wa b { font-size: 1.5rem; } .ds-wa span { font-size: 1.125rem; } .ds-wa strong { margin-top: 10px; font-size: 2.2rem; font-variant-numeric: tabular-nums lining-nums; letter-spacing: .01em; } .ds-wa:hover, .ds-wa:focus-visible { background: #f6dc95; } .ds-wa:focus-visible { outline: 3px solid #27307a; outline-offset: 3px; }"
     }
   ],
   "narrative": {
-    "northStar": "Frosted Glass in Warm Light",
-    "overview": "A neighbourhood cat shop in the client's own palette: deep navy, soft gold and warm cream. The page ground is cream, lit from behind by four large, soft radial pools of gold and navy that stay fixed while the page scrolls. Over that light, the interface floats as frosted glass: the header, the hero card, the category pills, the shelf case, the order panel, the lists, the inner page heads and the notes are all translucent warm-white panels with a white edge, an 18px blur, a thin highlight along the top and a soft navy lift underneath. The owner's photos are the only opaque, saturated things on the page, and the glass is there to let them and the light show through.\n\nNavy carries the structure: headings, dark buttons, the WhatsApp action and the footer. Gold marks where to act and where you are: the primary button, the sliding nav pill, the shop row in view, the contact WhatsApp card, step discs and the last floor-line stop. Everything else is calm. One typeface, Anek Bangla, carries every role in English and Bangla. Everything sits straight, with no tilts, stickers or hand-placed objects.\n\nDensity stays compact and legible for readers 30 and over on phones. Body text is 19px, readable text never goes below 18px, and every target is at least 48px. The user rejected the previous sticker-and-hanging-tag layout because it copied suirenbd.com; this world is the client's own palette plus glass.",
+    "northStar": "Paper on the Counter, Glass in the Air",
+    "overview": "A neighbourhood cat shop in the client's own palette: deep navy, bright gold and warm cream. The page ground is plain cream with no coloured light behind it. Content that stays put sits on flat light-cream paper: a 1px navy hairline, 18px corners, no shadow and no blur. Frosted glass is kept for the few layers that genuinely float over content: the sticky header, the phone tab bar, the hero card over the shop photo and the small tags pinned on photos. Only those floating layers cast a shadow. The owner's photos are the only saturated things on the page, set flat with 18px corners and no drop shadow.\n\nNavy carries the structure: headings, dark buttons, the WhatsApp action, the tab bar's raised Order button and the footer. Gold marks where to act and where you are: the primary button, the sliding nav pill, the active tab, the shop row in view, the contact WhatsApp card, step discs and the last floor-line stop. One typeface, Anek Bangla, carries every role in English and Bangla. Everything sits straight.\n\nDensity stays compact and legible for readers 30 and over on phones. Body text is 19px, readable text is meant never to go below 18px, and every target is at least 48px. English and Bangla are separate twin pages (the Bangla set lives under `bn/`); English pages keep Bangla only for the hero tagline and the footer tagline, and the language switch crossfades between twins in place. The user rejected an earlier sticker-and-hanging-tag layout because it copied suirenbd.com, and a later all-glass pass because it read as generated; this world is the client's palette, flat paper and a little glass.",
     "keyCharacteristics": [
-      "Frosted glass panels (warm-white at 58% or 78%, 18px blur, 1.35 saturation, white edge, top highlight, soft navy lift) over a cream ground with fixed gold and navy light.",
-      "Navy for structure, gold for \"act here\" and \"you are here\", always with dark text on gold.",
-      "One face: Anek Bangla, 700 for headings, 500 for Bangla lines, 400 for body.",
-      "Generous rounding (14 to 36px) and 999px pills; everything sits straight.",
-      "Full-bleed photo hero with a frosted card bottom-left.",
-      "The owner's photos lead every image slot."
+      "Plain cream ground; static panels are flat light-cream paper with a navy hairline and 18px corners.",
+      "Glass (warm-white 58% or 78%, 18px blur, 1.35 saturation, white edge) only on layers that float: header, tab bar, hero card, photo tags.",
+      "One soft navy lift, only under the header, the tab bar (and its Order disc) and the hero card.",
+      "Navy for structure, gold for \"act here\" and \"you are here\", always with ink text on gold.",
+      "One face: Anek Bangla; Bangla pages get taller line-heights and no tracking.",
+      "Photos flat, 18px corners (hero stage 24px); categories are round photos with labels.",
+      "Phone-first: under 900px the top nav hides and a bottom tab bar with a raised navy Order button takes over."
     ],
     "rules": [
       { "name": "The Gold Means Go Rule", "body": "Gold marks an action or \"you are here\", plus the footer headings. It never fills captions, labels or ordinary sections, and text on gold is always ink.", "section": "colors" },
-      { "name": "The Navy Action Rule", "body": "The hero's WhatsApp action is a navy pill with a gold glyph, because it sits on glass over a photo where gold would wash out. Elsewhere the primary call is gold.", "section": "colors" },
+      { "name": "The Navy Action Rule", "body": "The WhatsApp action that sits on glass (the hero action, the tab bar's Order disc) is navy with a gold glyph, because gold would wash out on glass over a photo. Elsewhere the primary call is gold.", "section": "colors" },
       { "name": "The One Voice Rule", "body": "Anek Bangla is the only typeface, at normal width. Hierarchy comes from size and weight, never from a second face.", "section": "typography" },
       { "name": "The Eighteen Floor Rule", "body": "No readable text below 18px (1.125rem). The only exception is the decorative chat timestamps (0.875rem), which are aria-hidden.", "section": "typography" },
-      { "name": "The Something-to-Blur Rule", "body": "Glass only works over something. Keep the fixed radial light on the page ground, or a photo, behind every glass panel; a glass panel on flat cream with nothing behind it is just a pale box.", "section": "elevation" },
-      { "name": "The One Lift Rule", "body": "There is one shadow, soft and navy-tinted with a large negative spread. Never use a hard, offset or neutral-black shadow.", "section": "elevation" },
-      { "name": "The Straight Table Rule", "body": "Nothing tilts and nothing is stuck on. Shape character comes from rounding and glass, not from rotation, thick edges or overlapping objects.", "section": "shapes" }
+      { "name": "The Twin Page Rule", "body": "Each language is its own page. English pages do not echo Bangla under headings; Bangla appears on English pages only as the hero tagline and the footer tagline.", "section": "typography" },
+      { "name": "The Floating Glass Rule", "body": "Glass is reserved for layers that float over content: the sticky header, the phone tab bar, the hero card over the photo and tags pinned on photos. Anything that stays in the page flow (shelf, lists, notes, address, rows, order panel, feature card, page heads) is flat paper. If it doesn't move over something, it isn't glass.", "section": "elevation" },
+      { "name": "The Only-Floaters-Lift Rule", "body": "There is one shadow, soft and navy-tinted with a large negative spread, and only floating layers carry it. Photos, media, the map, the chat and paper panels have none. Never use a hard, offset or neutral-black shadow.", "section": "elevation" },
+      { "name": "The Straight Table Rule", "body": "Nothing tilts and nothing is stuck on. Shape character comes from rounding, paper and the hairline, not from rotation, thick edges or overlapping objects.", "section": "shapes" }
     ],
     "dos": [
-      "Do build every floating surface from the one glass recipe: glass or glass-strong fill, 18px blur at 1.35 saturation, 1px white edge, top highlight and the navy lift.",
-      "Do keep the fixed gold and navy light on the cream ground, or a photo, behind glass.",
-      "Do use glass-strong wherever text sits over a photo.",
+      "Do use glass only for layers that float over content (header, tab bar, hero card, photo tags), built from the one recipe: glass or glass-strong fill, 18px blur at 1.35 saturation, 1px white edge, top highlight and the navy lift (tags skip the lift).",
+      "Do build every static panel as paper: light-cream fill, 1px navy hairline, 18px corners, no shadow.",
+      "Do keep the page ground plain cream.",
+      "Do set photos flat with 18px corners (hero stage 24px) and no shadow.",
       "Do keep gold for action and \"you are here\", always with ink text.",
-      "Do set everything in Anek Bangla: 700 headings, 500 Bangla lines, 400 body.",
+      "Do set everything in Anek Bangla, and give Bangla pages their taller line-heights with zero tracking.",
       "Do let the owner's photos lead every image slot, with captions below, never on top (except the tour tag).",
       "Do keep every readable line at 18px or larger, every target at 48px or larger, contrast at WCAG AA, and content visible without JavaScript."
     ],
     "donts": [
+      "Don't put glass on panels that stay in the page flow, or bring back coloured radial light behind the page.",
+      "Don't put shadows on photos, media, the map, the chat or paper panels.",
       "Don't bring back stickers, hanging tags, a logo stamp, tilts, thick white edges or a footer wordmark; that layout copied suirenbd.com and was rejected.",
+      "Don't add Bangla sub-lines under English headings; the Bangla twin page carries the Bangla.",
       "Don't add a second typeface.",
       "Don't use hard, offset or neutral-black shadows.",
       "Don't put muted or navy-lift text on gold; use ink only.",

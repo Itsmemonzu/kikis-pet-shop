@@ -16,12 +16,12 @@ def switch(lang, page):
     return f'<a class="k-lang" href="../{page}" hreflang="en" lang="en"><i class="fa-solid fa-language" aria-hidden="true"></i>English</a>'
 
 def alternates(page):
-    return (f'<link rel="alternate" hreflang="en" href="{BASE}{page}">\n'
+    return (f'  <link rel="alternate" hreflang="en" href="{BASE}{page}">\n'
             f'  <link rel="alternate" hreflang="bn" href="{BASE}bn/{page}">\n')
 
 def add_switch(s, lang, page):
     s = re.sub(r'\s*<a class="k-lang"[^>]*>.*?</a>', "", s, flags=re.S)
-    s = re.sub(r'  <link rel="alternate" hreflang="[a-z]+"[^>]*>\n', "", s)
+    s = re.sub(r'[ \t]*<link rel="alternate" hreflang="[a-z]+"[^>]*>\n', "", s)
     s = s.replace('<a class="k-btn k-btn--white"', switch(lang, page) + '\n    <a class="k-btn k-btn--white"', 1)
     s = s.replace('  <link rel="stylesheet" href="', alternates(page) + '  <link rel="stylesheet" href="', 1)
     return s
