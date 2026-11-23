@@ -86,3 +86,10 @@ Instant navigation: add the `speculationrules` script from the prototype `<head>
 | category pills | Icon List or 5 small Containers (Image + Heading + Text, link set) | `k-pills`, each `k-pill k-glass` |
 | meow-babies | Container 2 columns: Image (big) + Container (glass card + 2 Images) | `k-feature__grid`, `k-feature__main`, `k-feature__card k-glass`, `k-feature__pair` |
 
+### English / Bangla (2026-11-23)
+
+- The prototype has a Bangla twin of every page in `site/bn/`, written in standard Dhaka Bangla. The header switch (`k-lang`) links each page to its twin.
+- In WordPress, install **Polylang** (free), add English and Bangla, then duplicate each Elementor page and link the pair. Copy the Bangla text from `site/bn/*.html`. Put Polylang's language switcher (a shortcode or menu item) where the `k-lang` link sits, with the `k-lang` class on it.
+- On Bangla pages the small Bangla sub-lines are removed, because the main text is already Bangla.
+- `tools/build_bn.py` regenerates `site/bn/` from the English pages using `tools/bn_strings.json`. Run `python tools/build_bn.py site tools/bn_strings.json` after editing English text, and add any new strings to the JSON.
+
